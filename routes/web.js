@@ -7,12 +7,12 @@ const indexController = require('./../controllers/IndexController');
  */
 router.get('/', indexController.index);
 
-router.get('/teste/', (req, res)=> {
-
-  res.send(`var ${req.body}`)
+router.post('/teste/', (req, res)=> {
+  console.log(req.body)
+  res.send(`var ${req.body.nome}`)
 }) 
 
-router.post('/post/', (req, res) => {
+router.get('/post/', (req, res) => {
   var nome = ''
   res.render('pages/teste', {
     nome: nome})
