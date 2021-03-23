@@ -1,7 +1,6 @@
 const express = require("express");
 const routes = require("./routes/web");
 const session = require("express-session");
-require("dotenv").config();
 
 const app = express();
 
@@ -11,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 // Configuração da sessão
 app.use(
   session({
-    secret: process.env.SESSION_SECRET,
+    secret: 'byphZjcFavJH',
     resave: false,
     saveUninitialized: false,
     cookie: {
