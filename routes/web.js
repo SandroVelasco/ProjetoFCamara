@@ -12,7 +12,11 @@ router.get('/', (req, res) => {
   })
 
 router.post('/teste/', (req, res)=> {
-  res.send(`Bem vindo ${req.body.nome}!`)
+  if (req.body.email != [null] && req.body.senha1 == req.body.senha1Confirm){
+    res.send(`Bem vindo ${req.body.email}!`)
+  } else{
+    res.send('erro')
+  }
 }) 
 
 
