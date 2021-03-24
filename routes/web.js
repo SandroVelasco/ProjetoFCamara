@@ -15,7 +15,7 @@ router.post('/teste/', (req, res)=> {
   if (req.body.email != [null] && req.body.senha1 == req.body.senha1Confirm){
     res.send(`Bem vindo ${req.body.email}!`)
   } else{
-    res.send('erro')
+    res.send('Erro: Email ou senhas inseridos incorretamente')
   }
 }) 
 
