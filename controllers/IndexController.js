@@ -4,9 +4,7 @@ const IndexController = {
    * Método: GET
    */
   index: (req, res) => {
-    var nome = "gabriel"
-    res.render('pages/teste', {
-      nome: nome})
+    res.render('pages/teste')
     //res.send("Olá!");
   }
 }

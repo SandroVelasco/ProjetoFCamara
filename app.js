@@ -1,11 +1,23 @@
 const express = require("express");
-const routes = require("./routes/web");
+const handlebars = require("express-handlebars");
+const web = require("./routes/web");
 const session = require("express-session");
-
+const bodyParser = require("body-parser");
 const app = express();
+const path = require("path");
 
-app.set("view engine", "ejs");
-app.use(express.urlencoded({ extended: true }));
+
+//Body Parser
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+//Handlebars
+app.engine('handlebars', handlebars({defaultLayout: 'main'}))
+app.set('view engine', 'handlebars');
+
+//Public
+app.use(express.static(path.join(__dirname,"public")))
+
 
 // Configuração da sessão
 app.use(
@@ -22,7 +34,7 @@ app.use(
 );
 
 // Routes
-app.use("/", routes);
+app.use("/", web);
 
 /**
  * Pasta(s) estática(s)

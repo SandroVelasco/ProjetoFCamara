@@ -5,17 +5,16 @@ const indexController = require('./../controllers/IndexController');
 /**
  * Index Controller
  */
-router.get('/', indexController.index);
+//router.get('/', indexController.index);
 
-router.post('/teste/', (req, res)=> {
-  console.log(req.body)
-  res.send(`var ${req.body.nome}`)
-}) 
-
-router.get('/post/', (req, res) => {
-  var nome = ''
-  res.render('pages/teste', {
-    nome: nome})
+router.get('/', (req, res) => {
+  res.render('admin/index')
   })
 
-module.exports = router;
+router.post('/teste/', (req, res)=> {
+  res.send(`Bem vindo ${req.body.nome}!`)
+}) 
+
+
+
+module.exports = router;  
