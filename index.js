@@ -1,15 +1,11 @@
 const express = require("express");
 const routes = require("./routes/web");
 const session = require("express-session");
-const path = require ("path");
 
 const app = express();
 
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
-
-//Public
-app.use(express.static(path.join(__dirname, "public")));
 
 // Configuração da sessão
 app.use(
