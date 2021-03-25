@@ -4,7 +4,7 @@ const IndexController = {
    * Método: GET
    */
   index: (req, res) => {
-    res.send("Olá!");
+    res.render('./../views/index');
   }
 }
 
