@@ -11,6 +11,10 @@ router.get('/', (req, res) => {
   res.render('admin/index')
   })
 
+  router.get('/cadastro', (req, res) => {
+    res.render('admin/cadastro')
+    })
+
 router.post('/teste/', (req, res)=> {
   if (req.body.email != [null] && req.body.senha1 == req.body.senha1Confirm){
     res.send(`Bem vindo ${req.body.email}!`)
