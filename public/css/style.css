@@ -1,22 +1,99 @@
-@media (min-width: 1200px) {
-
-    .container{
-        max-width: 1400px;
-    }
-
+/* Html tags */
+body {
+    font-family: 'Inter', sans-serif;
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+*, h5, p {
+    margin: 0;
+    padding: 0;
+}
 
-    .container{
-        max-width: 1170px;
-    }
+ul {
+    list-style-type: none;
+}
 
+a, a:hover {
+    text-decoration: none;
+    color: #727272;
 }
 
 /* Navbar topo */
-.logo {
-    width: 165px;
-    height: 48px;
-    background-color: #C4C4C4;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.navbar-logo {
+    padding: 12px 63px;
+    background-color: #C4C4C4;    
+}
+
+.navbar-list {
+    height: 100%;
+}
+
+.navbar-list ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-list li {
+    list-style: none;
+}
+
+.navbar-list a {
+    display: block;
+    padding: 0 30px;
+}
+
+.navbar-donate {
+    background-color: #c4c4c4;
+    padding: 5px 10px;
+    margin-right: 47px;
+}
+
+.navbar-user {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-user p {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-user-content {
+    margin-left: 8px;
+}
+
+.navbar-user-content h5,
+.navbar-user-content span {
+    line-height: 1.3;
+}
+
+.navbar-user-content h5 {
+    font-size: 16px;
+}
+
+.navbar-user-content span {
+    display: block;
+    font-size: 12px;
+}
+
+.navbar-user-dropdown {
+    display: block;
+    margin: 0 10px;
+}
+
+.navbar-user-dropdown i {
+    font-size: 1.8rem;
+    color: #C4C4C4;
+}
+
+.navbar-user-dropdown i:hover {
+    cursor: pointer;
 }
