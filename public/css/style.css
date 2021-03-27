@@ -1,4 +1,7 @@
 /* Html tags */
+html, body {
+    height: 100vh;
+}
 body {
     font-family: 'Inter', sans-serif;
 }
@@ -96,4 +99,20 @@ header {
 
 .navbar-user-dropdown i:hover {
     cursor: pointer;
+}
+
+/* Card donation */
+.card-d {
+}
+
+.card-d-photo {
+    margin-top: 54px;
+    text-align: center;
+    padding: 109px 0;
+    border-radius: 32px 32px 0px 0px;
+    background-color: #ccc;
+}
+
+.card-d-content {
+    border-radius: 0px 0px 32px 32px;
 }
