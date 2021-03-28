@@ -20,7 +20,15 @@ const IndexController = {
    * Método: GET
    */
   pagamento: (req, res) => {
-    res.render('./../views/pagamento.ejs');
+    res.render('./../views/pagamento');
+  },
+
+  /**
+   * Rota: /agradecimento
+   * Método: GET
+   */
+  agradecimento: (req, res) => {
+    res.render('./../views/agradecimento');
   }
 }
 
