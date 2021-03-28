@@ -101,39 +101,39 @@ header {
 /* estrutura1 */
 
 #dropdown-item-1{
-  border-color:blue;
-  background-color: white;
-  color: blue;
-  width: 120px;
+    border-color:blue;
+    background-color: white;
+    color: blue;
+    width: 120px;
 }
 
 #dropdown-item-2{
-  border-color:blue;
-  background-color: white;
-  color: blue;
-  width: 120px;
-  margin-left: 1.5ch ;
-  margin-right: 1.5ch ;
+    border-color:blue;
+    background-color: white;
+    color: blue;
+    width: 120px;
+    margin-left: 1.5ch ;
+    margin-right: 1.5ch ;
 }
 
 #dropdown-item-3{
-  border-color:blue;
-  background-color: white;
-  color: blue;
-  width: 120px;
+    border-color:blue;
+    background-color: white;
+    color: blue;
+    width: 120px;
 }
 
 #titulo {
-  font-size: 20pt;
+    font-size: 20pt;
 }
 
 #link {
-  color: blue;
-  margin-left: 1.5ch ;
+    color: blue;
+    margin-left: 1.5ch ;
 }
 
 #busca{
-  float: right;
-  height:32px;
-  width:350px;
+    float: right;
+    height:32px;
+    width:350px;
 }
