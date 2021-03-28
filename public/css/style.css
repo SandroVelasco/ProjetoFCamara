@@ -187,10 +187,12 @@ header {
 
 .card {
     width: 360px;
-    height: 123px;
+    height: 246px;
+    border-color: #727272;
 }
 
 .card-btn{
+    margin-top: 6px;
     float: right;
     width: 74px;
     height: 24px;
@@ -202,8 +204,19 @@ header {
 }
 
 .card-img-top{
-    width: 360px;
-    height: 123px;
+    width: 358px;
+    height: 120px;
+}
+
+.card-text-nome{
+    margin-top: 10px;
+    float: left;
+    width: 75px;
+    height: 18px;
+    font: Inter;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 18px;
 }
 
 .card-title{
@@ -219,8 +232,29 @@ header {
     line-height: 15px;
 }
 
-.card-text-nome{
+.imagem-user-icon{
+    margin-right: 5px;
+    margin-top: 10px;
+    float: left;
+    width: 16px;
+    height: 16px;
+}
+
+.card-text-divisao{
+    margin-left: 1px;
+    margin-top: 8px;
+    float: left;
+    font-size: 15px;
+}
+
+.card-text-localizacao{
+    margin-left: 15px;
+    margin-top: 10px;
+    float: left;
+    width: 90px;
+    height: 18px;
     font: Inter;
     font-size: 12px;
-    line-height: 15px;
+    font-style: normal;
+    line-height: 18px;
 }
