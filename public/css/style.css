@@ -98,42 +98,89 @@ header {
     cursor: pointer;
 }
 
-/* estrutura1 */
+/* estrutura-tela-1 */
+
+#titulo{
+    height: 36px;
+    left: 463px;
+    top: 115px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+}
 
 #dropdown-item-1{
-    border-color:blue;
+    left: 18.02%;
+    right: 36.94%;
+    top: 16.67%;
+    bottom: 16.67%;
+    color: #1352AF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
     background-color: white;
-    color: blue;
-    width: 120px;
+    width: 111px;
+    height: 36px;
 }
 
 #dropdown-item-2{
-    border-color:blue;
+    left: 18.02%;
+    right: 36.94%;
+    top: 16.67%;
+    bottom: 16.67%;
+    color: #1352AF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
     background-color: white;
-    color: blue;
-    width: 120px;
-    margin-left: 1.5ch ;
-    margin-right: 1.5ch ;
+    width: 111px;
+    height: 36px;
 }
 
 #dropdown-item-3{
-    border-color:blue;
+    left: 18.02%;
+    right: 36.94%;
+    top: 16.67%;
+    bottom: 16.67%;
+    color: #1352AF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
     background-color: white;
-    color: blue;
-    width: 120px;
-}
-
-#titulo {
-    font-size: 20pt;
+    width: 111px;
+    height: 36px;
 }
 
 #link {
-    color: blue;
+    width: 90px;
+    height: 24px;
+    font-size: 14px;
+    color: #1352AF;
     margin-left: 1.5ch ;
 }
 
-#busca{
+#busca {
     float: right;
-    height:32px;
-    width:350px;
+    height:33px;
+    width:360px;
+    border-bottom: 1px solid #000000;
+}
+
+#busca-1 {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#busca-2 {
+    background-color: transparent;
+    border-color: transparent;
+    color: #727272;
 }
