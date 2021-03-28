@@ -6,6 +6,7 @@ const indexController = require('./../controllers/IndexController');
  * Index Controller
  */
 router.get('/', indexController.index);
-router.get('/doacao2', indexController.doacao2)
+router.get('/doacao2', indexController.doacao2);
+router.get('/pagamento', indexController.pagamento);
 
 module.exports = router;
