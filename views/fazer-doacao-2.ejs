@@ -1,0 +1,110 @@
+<%- include('./templates/head.ejs') %>
+
+<div class="container">
+  <%- include('./templates/navtop.ejs') %>
+
+  <main class="card-d">
+    <div class="card-d-photo">FOTO</div>
+    <div class="card-d-content">
+      <div class="card-d-content-center">
+
+        <div>
+          <h1>Maria Silva</h1>
+          <p class="card-d-localization">
+            <i class="fas fa-map-marker-alt"></i>
+            EMEI José Bonifácio de Andrade e Silva, Santana - São Paulo - SP
+          </p>
+        </div>
+
+        <div class="mt-5">
+          <h3>Livros para vestibular</h3>
+          <p class="mt-2">
+            Estou no 3° ano e preciso estudar para o vestibular mas meus pais não têm condições de comprar os materiais e livros que preciso. Necessito de ajuda para comprar estes materiais, quero prestar vestibular de Direito na usp. 
+          </p>
+        </div>
+
+        <div class="mt-5">
+          <h3>Produtos</h3>
+          <p class="mt-2 mb-3">
+            Selecione quantos materiais você puder doar para Maria
+          </p>
+
+          <div class="d-flex">
+            <div class="product-box">
+              <span class="product-box-description">
+                1 caderno universitário | 10 matérias
+              </span>
+
+              <div>
+                <img src="/img/image 3.svg" alt="product-image">
+              </div>
+              
+              <div class="product-box-footer mt-2">
+                <span class="product-box-price">R$ 12,00</span>
+                <div class="product-box-square"></div>
+              </div>
+            </div>
+          
+            <div class="product-box">
+              <span class="product-box-description">
+                1 livro | Matemática Ensino Médio
+              </span>
+
+              <div>
+                <img src="/img/image 4.svg" alt="product-image" width="82" height="82">
+              </div>
+              
+              <div class="product-box-footer mt-2">
+                <span class="product-box-price">R$ 30,00</span>
+                <div class="product-box-square"></div>
+              </div>
+            </div>
+
+            <div class="product-box">
+              <span class="product-box-description">
+                1 Kit Caneta esferográfica | 4 unidades 
+              </span>
+
+              <div>
+                <img src="/img/image 5.svg" alt="product-image">
+              </div>
+              
+              <div class="product-box-footer mt-2">
+                <span class="product-box-price">R$ 7,00</span>
+                <div class="product-box-square"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <h3 class="mb-2">Doar como anônimo</h3>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox01">
+            <label class="form-check-label" for="checkbox01">
+              <span class="card-checkbox-label">Você doa anonimamente e o estudante não saberá quem fez a doação.</span>
+            </label>
+          </div>
+
+          <div class="form-check mt-2">
+            <input class="form-check-input" type="checkbox" value="" id="checkbox02">
+            <label class="form-check-label" for="checkbox02">
+              <span class="card-checkbox-label">O estudante saberá quem fez a doação e poderá enviar para você uma mensagem de agradecimento.</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between mt-5">
+          <button class="btn btn-back">< Voltar</button>
+          <button class="btn btn-continue">Continuar doação</button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  
+  
+</div>
+
+<%- include('./templates/body.ejs') %>

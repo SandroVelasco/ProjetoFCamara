@@ -3,7 +3,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-*, h5, p {
+*, h1, h3, h5, p {
     margin: 0;
     padding: 0;
 }
@@ -15,6 +15,12 @@ ul {
 a, a:hover {
     text-decoration: none;
     color: #727272;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
 }
 
 /* Navbar topo */
@@ -98,6 +104,87 @@ header {
     cursor: pointer;
 }
 
+/* Card donation */
+.card-d {  
+    margin-bottom: 60px;
+}
+
+.card-d-photo {
+    margin-top: 54px;
+    text-align: center;
+    padding: 109px 0;
+    border-radius: 32px 32px 0px 0px;
+    background-color: #ccc;
+}
+
+.card-d-content {
+    border-radius: 0px 0px 32px 32px;
+    box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
+    padding: 12px 0 50px 0;
+}
+
+.card-d-content-center {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.card-d-localization {
+    color: #51535F;
+}
+
+.card-checkbox-label {
+    font-weight: 300;
+}
+
+/* Product box */
+.product-box {
+    border: 1px solid #51535F;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 214px;
+    height: 172px;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 15px;
+    margin-right: 30px;
+}
+
+.product-box-description {
+    color: #212832;
+    font-weight: 500;
+}
+
+.product-box-price {
+    font-weight: 600;
+}
+
+.product-box-footer {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-box-square {
+    width: 27px;
+    height: 27px;
+    border: 1px solid black;
+}
+
+.product-box label {
+    font-weight: 300;
+}
+
+.btn-back {
+    color: #51535F;
+}
+
+.btn-continue {
+    background: #E2E6EF;
+    border-radius: 30px;
+    padding: 8px 40px;
+    color: #212832;
+}
 /* estrutura-tela-1 */
 
 #titulo{

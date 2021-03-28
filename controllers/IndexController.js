@@ -4,7 +4,11 @@ const IndexController = {
    * Método: GET
    */
   index: (req, res) => {
-    res.render('../views/index');
+    res.render('./../views/index');
+  },
+
+  doacao2: (req, res) => {
+    res.render('./../views/fazer-doacao-2');
   }
 }
 
