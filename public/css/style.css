@@ -1,0 +1,258 @@
+/* Html tags */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+*, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #727272;
+}
+
+/* Navbar topo */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.navbar-logo {
+    padding: 12px 63px;
+    background-color: #C4C4C4;    
+}
+
+.navbar-list {
+    height: 100%;
+}
+
+.navbar-list ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-list li {
+    list-style: none;
+}
+
+.navbar-list a {
+    display: block;
+    padding: 0 30px;
+}
+
+.navbar-donate {
+    background-color: #c4c4c4;
+    padding: 5px 10px;
+    margin-right: 47px;
+}
+
+.navbar-user {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-user p {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-user-content {
+    margin-left: 8px;
+}
+
+.navbar-user-content h5,
+.navbar-user-content span {
+    line-height: 1.3;
+}
+
+.navbar-user-content h5 {
+    font-size: 16px;
+}
+
+.navbar-user-content span {
+    display: block;
+    font-size: 12px;
+}
+
+.navbar-user-dropdown {
+    display: block;
+    margin: 0 10px;
+}
+
+.navbar-user-dropdown i {
+    font-size: 1.8rem;
+    color: #C4C4C4;
+}
+
+.navbar-user-dropdown i:hover {
+    cursor: pointer;
+}
+
+/* estrutura-tela-1 */
+
+#titulo{
+    height: 36px;
+    left: 463px;
+    top: 115px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+#dropdown-item-1{
+    left: 18.02%;
+    right: 36.94%;
+    top: 16.67%;
+    bottom: 16.67%;
+    color: #1352AF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: white;
+    width: 111px;
+    height: 36px;
+}
+
+#dropdown-item-2{
+    left: 18.02%;
+    right: 36.94%;
+    top: 16.67%;
+    bottom: 16.67%;
+    color: #1352AF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: white;
+    width: 111px;
+    height: 36px;
+}
+
+#dropdown-item-3{
+    left: 18.02%;
+    right: 36.94%;
+    top: 16.67%;
+    bottom: 16.67%;
+    color: #1352AF;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: white;
+    width: 111px;
+    height: 36px;
+}
+
+#link {
+    width: 90px;
+    height: 24px;
+    font-size: 14px;
+    color: #1352AF;
+    margin-left: 1.5ch ;
+}
+
+#busca {
+    float: right;
+    height:33px;
+    width:360px;
+    border-bottom: 1px solid #000000;
+}
+
+#busca-1 {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#busca-2 {
+    background-color: transparent;
+    border-color: transparent;
+    color: #727272;
+}
+
+.card {
+    border: 1px solid #C4C4C4;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-btn{
+    margin-top: 6px;
+    float: right;
+    width: 74px;
+    height: 24px;
+    background-color: #C4C4C4;
+    font: Inter;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 18px;
+}
+
+.card-img-top{
+    height: 120px;
+}
+
+.card-text-nome{
+    margin-top: 10px;
+    float: left;
+    width: 75px;
+    height: 18px;
+    font: Inter;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 18px;
+}
+
+.card-title{
+    font: Nunito;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.card-text{
+    font: Inter;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.imagem-user-icon{
+    margin-right: 5px;
+    margin-top: 10px;
+    float: left;
+    width: 16px;
+    height: 16px;
+}
+
+.card-text-divisao{
+    margin-left: 1px;
+    margin-top: 8px;
+    float: left;
+    font-size: 15px;
+}
+
+.card-text-localizacao{
+    margin-left: 15px;
+    margin-top: 10px;
+    float: left;
+    width: 90px;
+    height: 18px;
+    font: Inter;
+    font-size: 12px;
+    font-style: normal;
+    line-height: 18px;
+}
