@@ -346,11 +346,14 @@ header {
 
 /* Card payment e card payment info */
 .card-payment {
-    flex-grow: 1;
+    flex-grow: 2;
+    flex-basis: 0;
     margin: 0 20px 0 0;
     box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
     padding: 94px;
     border-radius: 32px;
+    display: flex;
+    justify-content: center;
 }
 
 .card-payment-paragraph {
@@ -393,6 +396,32 @@ header {
 }
 
 .card-payment-info {
-    background-color: blue;
+    background-color: rgba(70, 110, 182, 0.2);
+    padding: 73px 57px 73px 57px;
+    border-radius: 32px;
+    flex-basis: 0;
     flex-grow: 1;
+}
+
+.card-payment-info-title {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card-payment-info-value {
+    font-family: 'Nunito', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #51535F;
+}
+
+.card-payment-info hr {
+    border: 1px solid #EEF3F7;
+    margin: 24px 0;
+    background: #51535F;
+}
+
+p.card-payment-info-description:last-child {
+    margin-top: 16px;
 }
