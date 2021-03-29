@@ -185,6 +185,7 @@ header {
     padding: 8px 40px;
     color: #212832;
 }
+
 /* estrutura-tela-1 */
 
 #titulo{
@@ -304,14 +305,14 @@ header {
     line-height: 18px;
 }
 
-.card-title{
+.card-title-tela1{
     font: Nunito;
     font-style: normal;
     font-size: 20px;
     line-height: 30px;
 }
 
-.card-text{
+.card-text-tela1{
     font: Inter;
     font-size: 12px;
     line-height: 15px;
@@ -424,4 +425,90 @@ header {
 
 p.card-payment-info-description:last-child {
     margin-top: 16px;
+}
+
+/* info tela confirmacao */
+
+#confirmacao-content-box{
+    margin-top: 46px;
+    border: 1px solid #EEF3F7;
+    width: 1135px;
+    height: 888px;
+}
+
+.confirmacao-titulo{
+    margin-top: 104px;
+    margin-left: 115px;
+    font-size: 24px;
+    font: Nunito;
+    line-height: 36px;
+}
+
+.card-confirmacao-produtos{
+    border-bottom: 1px solid #E2E6EF;
+    float: left;
+    margin-left: 115px;
+    margin-top: 37px;
+    width: 600px;
+    height: 122px;
+}
+
+.card-confirmacao-img{
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 82px;
+    height: 82px;
+}
+
+.card-confirmacao-title{
+    width: 397px;
+    height: 18px;
+    margin-bottom: 20px;
+    font: Inter;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.card-confirmacao-text{
+    width: 247px;
+    height: 48px;
+    font: Inter;
+    color:#1352AF;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.card-confirmacao-body{
+    height: 100px;
+    width: 300px;
+    margin-top: 10px;
+    float: left;
+}
+
+.indiana{
+    width: 110px;
+}
+
+.indiana2{
+    margin-left: 40px;
+    float: right;
+    width: 11px;
+}
+
+.card-confirmacao-preco{
+    width: 64px;
+    height: 24px;
+    margin-top: 80px;
+    float: right;
+    font: Inter;
+    color: #212832;
+}
+
+.imagem-lixo{
+    margin-right: 10px;
+    float: right;
+    margin-top: 10px;
+    width: 18px;
+    height: 20px;
 }
