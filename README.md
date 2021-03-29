@@ -14,8 +14,14 @@ npm install
 node index.js
 ```
 
+## URL Local
+
+```
+http://localhost:3000
+```
+
 - - -
-Projeto de solução FCamara por:
+Projeto de solução FCamara desenvolvido por:
 - Luciana Guedes
 - Sandro Rohan
 - Bianca Rosa
