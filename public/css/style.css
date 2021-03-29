@@ -430,6 +430,9 @@ p.card-payment-info-description:last-child {
 /* info tela confirmacao */
 
 #confirmacao-content-box{
+    border-radius: 32px;
+    margin-bottom: 184px;
+    box-shadow: 2px 2px 8px rgba(85, 1, 175, 0.24);
     margin-top: 46px;
     border: 1px solid #EEF3F7;
     width: 1135px;
@@ -444,11 +447,19 @@ p.card-payment-info-description:last-child {
     line-height: 36px;
 }
 
-.card-confirmacao-produtos{
+.card-confirmacao-produtos1{
     border-bottom: 1px solid #E2E6EF;
     float: left;
     margin-left: 115px;
     margin-top: 37px;
+    width: 600px;
+    height: 122px;
+}
+
+.card-confirmacao-produtos{
+    border-bottom: 1px solid #E2E6EF;
+    float: left;
+    margin-left: 115px;
     width: 600px;
     height: 122px;
 }
@@ -514,6 +525,8 @@ p.card-payment-info-description:last-child {
 }
 
 .card-confirmacao-subtotal{
+    margin-top: 17px;
+    float: left;
     color: #212832;
     font: Inter;
     font-size: 16px;
@@ -523,21 +536,116 @@ p.card-payment-info-description:last-child {
 }
 
 .card-confirmacao-produtos-subtotal{
-    border-bottom: 1px solid #E2E6EF;
+    border-bottom:  1px solid #E2E6EF;
     float: left;
     margin-left: 115px;
-    margin-top: 37px;
     width: 600px;
     height: 58px;
 }
 
 .card-confirmacao-valor{
-    margin-bottom: 20px;
+    margin-right: 43px;
+    margin-top: 19px;
     float: right;
     color: #212832;
     font: Inter;
     font-size: 16px;
     width: 68px;
     height: 21px;
-    margin-left: px;
+}
+
+.confirmacao-info-box{
+    float: right;
+    width: 375px;
+    height: 650px;
+}
+
+.confirmacao-info-box-title{
+    margin-top: 35px;
+    margin-left: 37px;
+    color: #212832;
+    font-size: 24px;
+    width: 308.96px;
+    height: 43px;
+}
+
+.confirmacao-info-box-subtitle1{
+    margin-left: 37px;
+    margin-top: 31px;
+    color: #000000;
+    font-size: 20px;
+    width: 178.26px;
+    height: 24px;
+}
+
+.confirmacao-info-box-subtitle2{
+    margin-left: 37px;
+    margin-top: 27px;
+    color: #000000;
+    font-size: 20px;
+    width: 178.26px;
+    height: 24px;
+}
+
+.confirmacao-info-box-content1{
+    margin-left: 37px;
+    margin-top: 9px;
+    font-size: 16px;
+    width: 300px;
+    height: 44px;
+}
+
+.confirmacao-info-box-content2{
+    margin-left: 37px;
+    margin-top: 16px;
+    font-size: 16px;
+    width: 289px;
+    height: 76px;
+}
+
+.confirmacao-info-box-content3{
+    margin-left: 37px;
+    margin-top: 5px;
+    font-size: 16px;
+    width: 297px;
+    height: 70px;
+}
+
+.confirmacao-info-box-content4{
+    margin-left: 37px;
+    margin-top: 16px;
+    font-size: 16px;
+    width: 288.7px;
+    height: 78px;
+}
+
+.confirmacao-checkbox{
+    font-size: 16px;
+    margin-top: 34px;
+    margin-left: 150px;
+    float: left;
+    width: 407px;
+    height: 45px;
+}
+
+.botao-realizar-doacao{
+    font-size: 16px;
+    background-color: #E2E6EF;
+    border-radius: 32px;
+    border: transparent;
+    margin-left: 510px;
+    margin-top: 59px;
+    width: 214px;
+    height: 66px;
+}
+
+.botao-voltar-confirmacao{
+    float: left;
+    margin-top: -50px;
+    margin-left: 160px;
+    border: transparent;
+    background-color: transparent;
+    font-size: 20px;
+    width: 85px;
+    height: 24px;
 }
