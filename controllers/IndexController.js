@@ -15,13 +15,13 @@ const IndexController = {
     res.render('./../views/fazer-doacao-2');
   },
 
-    /**
- * Rota: /confirmacao 
- * Método: GET
- */
+  /**
+   * Rota: /confirmacao 
+   * Método: GET
+   */
   confirmacao: (req, res) => {
     res.render('./../views/confirmacao.ejs');
-},
+  },
 
   /**
    * Rota: /pagamento 
@@ -30,7 +30,14 @@ const IndexController = {
   pagamento: (req, res) => {
     res.render('./../views/pagamento.ejs');
   }
-
+  
+  /**
+   * Rota: /agradecimento
+   * Método: GET
+   */
+  agradecimento: (req, res) => {
+    res.render('./../views/agradecimento');
+  }
 }
 
 module.exports = IndexController;
