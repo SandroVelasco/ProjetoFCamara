@@ -16,6 +16,14 @@ const IndexController = {
   },
 
   /**
+   * Rota: /confirmacao 
+   * Método: GET
+   */
+  confirmacao: (req, res) => {
+    res.render('./../views/confirmacao.ejs');
+  },
+
+  /**
    * Rota: /pagamento 
    * Método: GET
    */
@@ -23,6 +31,14 @@ const IndexController = {
     res.render('./../views/pagamento');
   },
 
+  /**
+   * Rota: /agradecimento
+   * Método: GET
+   */
+  agradecimento: (req, res) => {
+    res.render('./../views/agradecimento');
+  }
+  
   /**
    * Rota: /agradecimento
    * Método: GET
