@@ -38,14 +38,6 @@ const IndexController = {
   agradecimento: (req, res) => {
     res.render('./../views/agradecimento');
   }
-  
-  /**
-   * Rota: /agradecimento
-   * Método: GET
-   */
-  agradecimento: (req, res) => {
-    res.render('./../views/agradecimento');
-  }
 }
 
 module.exports = IndexController;
