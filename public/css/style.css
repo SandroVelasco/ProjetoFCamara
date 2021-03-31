@@ -132,7 +132,7 @@ header {
 
 .card-d-content-center {
     margin: 0 auto;
-    width: 70%;
+    width: 85%;
 }
 
 .card-d-localization {
@@ -141,6 +141,12 @@ header {
 
 .card-checkbox-label {
     font-weight: 300;
+}
+
+.card-d-modalidade {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 /* Product box */
