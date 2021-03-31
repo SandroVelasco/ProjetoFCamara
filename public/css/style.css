@@ -8,6 +8,12 @@ body {
     padding: 0;
 }
 
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
 ul {
     list-style-type: none;
 }
@@ -108,19 +114,19 @@ header {
 /* Card donation */
 .card-d {  
     margin-bottom: 60px;
+    box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
+    border-radius: 32px;
 }
 
 .card-d-photo {
     margin-top: 54px;
     text-align: center;
     padding: 109px 0;
-    border-radius: 32px 32px 0px 0px;
-    background-color: #ccc;
+    border-radius: 32px;
+    background: #EEF3F7;
 }
 
 .card-d-content {
-    border-radius: 0px 0px 32px 32px;
-    box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
     padding: 12px 0 50px 0;
 }
 
