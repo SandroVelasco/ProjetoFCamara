@@ -48,6 +48,7 @@ header {
 .navbar-list a {
     display: block;
     padding: 0 30px;
+    color: #727272;
 }
 
 .navbar-donate {
