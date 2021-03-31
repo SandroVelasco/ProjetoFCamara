@@ -33,14 +33,14 @@
           <div class="form-check">
             <input class="form-check-input" type="radio" value="" id="radiobutton01" name="modalidade">
             <label class="form-check-label" for="radiobutton01">
-              <span class="card-checkbox-label">Você doa anonimamente e o estudante não saberá quem fez a doação.</span>
+              Você doa anonimamente e o estudante não saberá quem fez a doação.
             </label>
           </div>
 
           <div class="form-check mt-2">
             <input class="form-check-input" type="radio" value="" id="radiobutton02" name="modalidade">
             <label class="form-check-label" for="radiobutton02">
-              <span class="card-checkbox-label">O estudante saberá quem fez a doação e poderá enviar para você uma mensagem de agradecimento.</span>
+              O estudante saberá quem fez a doação e poderá enviar para você uma mensagem de agradecimento.
             </label>
           </div>
         </div>
@@ -117,9 +117,25 @@
         </div>
       </div>
     </div>
-  </main>
-  
-  
+  </main>  
 </div>
+
+<script>
+  let inputs = document.querySelectorAll('input[name="modalidade"]');
+
+  inputs.forEach(value => {
+    value.addEventListener("click", setRadioDivStyle)
+  })
+
+  function setRadioDivStyle(e) {
+    if(e.target.id == "radiobutton01") {
+      inputs[0].parentElement.style.opacity = "1";
+      inputs[1].parentElement.style.opacity = "0.5";
+    } else {
+      inputs[0].parentElement.style.opacity = "0.5";
+      inputs[1].parentElement.style.opacity = "1";
+    }
+  }
+</script>
 
 <%- include('./templates/body.ejs') %>

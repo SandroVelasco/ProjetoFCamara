@@ -142,7 +142,7 @@ header {
     flex-basis: 0;
 
     background: rgba(255, 146, 146, 0.1);
-    padding: 27px 20px 35px 20px;
+    padding: 27px 20px 40px 20px;
     height: max-content;
     text-align: center;
     box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
@@ -164,10 +164,6 @@ header {
 
 .card-d-localization {
     color: #51535F;
-}
-
-.card-checkbox-label {
-    font-weight: 300;
 }
 
 .card-d-modalidade {
