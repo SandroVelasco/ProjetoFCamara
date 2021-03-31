@@ -126,11 +126,15 @@ header {
     background: #EEF3F7;
 }
 
+.card-d-container {
+    display: flex;
+    padding: 0 30px;
+}
+
 .card-d-content {
-    /* padding: 12px 0 50px 0; */
     flex-grow: 2;
     flex-basis: 0;
-    padding: 13px 80px 77px 80px;
+    padding: 13px 80px 77px 50px;
 }
 
 .card-d-info {
@@ -138,11 +142,12 @@ header {
     flex-basis: 0;
 
     background: rgba(255, 146, 146, 0.1);
-    padding: 27px 20px;
+    padding: 27px 20px 35px 20px;
     height: max-content;
     text-align: center;
     box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
     border-radius: 32px;
+    margin: 10px 0 30px 0;
 }
 
 .card-d-info-title {
@@ -218,11 +223,11 @@ header {
     height: 20px;
 }
 
-.product-list .product-box {
+.product-box {
     margin-bottom: 24px;
 }
 
-.product-list .product-box:last-child {
+.product-box:last-child {
     margin-bottom: 0;
 }
 /* */
