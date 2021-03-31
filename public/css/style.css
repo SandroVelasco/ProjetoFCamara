@@ -8,6 +8,12 @@ body {
     padding: 0;
 }
 
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+
 ul {
     list-style-type: none;
 }
@@ -108,83 +114,137 @@ header {
 /* Card donation */
 .card-d {  
     margin-bottom: 60px;
+    box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
+    border-radius: 32px;
 }
 
 .card-d-photo {
     margin-top: 54px;
     text-align: center;
     padding: 109px 0;
-    border-radius: 32px 32px 0px 0px;
-    background-color: #ccc;
+    border-radius: 32px;
+    background: #EEF3F7;
+}
+
+.card-d-container {
+    display: flex;
+    padding: 0 30px;
 }
 
 .card-d-content {
-    border-radius: 0px 0px 32px 32px;
-    box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
-    padding: 12px 0 50px 0;
+    flex-grow: 2;
+    flex-basis: 0;
+    padding: 13px 80px 77px 50px;
 }
 
-.card-d-content-center {
-    margin: 0 auto;
-    width: 70%;
+.card-d-info {
+    flex-grow: 1;
+    flex-basis: 0;
+
+    background: rgba(255, 146, 146, 0.1);
+    padding: 27px 20px 40px 20px;
+    height: max-content;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
+    border-radius: 32px;
+    margin: 10px 0 30px 0;
+}
+
+.card-d-info-title {
+    color: #528EF5;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+}
+
+.card-d-info-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10px 0;
 }
 
 .card-d-localization {
     color: #51535F;
 }
 
-.card-checkbox-label {
-    font-weight: 300;
+.card-d-modalidade {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 /* Product box */
 .product-box {
-    border: 1px solid #51535F;
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 214px;
-    height: 172px;
     text-align: center;
     font-size: 14px;
-    padding: 5px 15px;
-    margin-right: 30px;
-}
-
-.product-box-description {
-    color: #212832;
-    font-weight: 500;
-}
-
-.product-box-price {
-    font-weight: 600;
-}
-
-.product-box-footer {
-    text-align: left;
+    background: white;
     display: flex;
-    justify-content: space-between;
+}
+
+.product-logo {
+    background: #EEF3F7;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    flex-basis: 92px;
+    flex-shrink: 0;
 }
 
-.product-box-square {
-    width: 27px;
-    height: 27px;
-    border: 1px solid black;
+.product-content {
+    padding: 7px 14px;
+    text-align: left;
 }
 
-.product-box label {
-    font-weight: 300;
+.product-title {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 6px;
 }
+
+.product-subtitle {
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.product-price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FF9292;
+}
+
+.product-box .form-check-input {
+    width: 20px;
+    height: 20px;
+}
+
+.product-box {
+    margin-bottom: 24px;
+}
+
+.product-box:last-child {
+    margin-bottom: 0;
+}
+/* */
 
 .btn-back {
     color: #51535F;
 }
 
 .btn-continue {
-    background: #E2E6EF;
-    border-radius: 30px;
-    padding: 8px 40px;
+    background: #397EF3;
+    border-radius: 5px;
+    padding: 11px 20px;
     color: #212832;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 64px;
+}
+
+.btn-continue:hover {
+    color: white;
 }
 
 /* estrutura-tela-1 */
