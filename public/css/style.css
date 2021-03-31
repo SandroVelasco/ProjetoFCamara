@@ -127,12 +127,15 @@ header {
 }
 
 .card-d-content {
-    padding: 12px 0 50px 0;
+    /* padding: 12px 0 50px 0; */
+    flex-grow: 2;
+    flex-basis: 0;
+    padding: 13px 80px 77px 80px;
 }
 
-.card-d-content-center {
-    margin: 0 auto;
-    width: 85%;
+.card-d-info {
+    flex-grow: 1;
+    flex-basis: 0;
 }
 
 .card-d-localization {
@@ -193,10 +196,18 @@ header {
 }
 
 .btn-continue {
-    background: #E2E6EF;
-    border-radius: 30px;
-    padding: 8px 40px;
+    background: #397EF3;
+    border-radius: 5px;
+    padding: 11px 20px;
     color: #212832;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 64px;
+}
+
+.btn-continue:hover {
+    color: white;
 }
 
 /* estrutura-tela-1 */
