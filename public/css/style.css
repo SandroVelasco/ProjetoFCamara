@@ -188,6 +188,12 @@ header {
 
 /* estrutura-tela-1 */
 
+.imagem-banner{
+    width: 1440px;
+    margin-left: -130px;
+    margin-top: 23px;
+}
+
 #titulo{
     height: 36px;
     left: 463px;
@@ -199,12 +205,24 @@ header {
     line-height: 150%;
 }
 
+#pesquisar-anuncio{
+    width: 384px;
+    height: 26px;
+    font-size: 16px;
+    color: #51535F;
+    margin-bottom: 10px;
+}
+
 #dropdown-item-1{
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #CAD1E2;
+    margin-left: 414px;
     left: 18.02%;
     right: 36.94%;
     top: 16.67%;
     bottom: 16.67%;
-    color: #1352AF;
+    color: #51535F;
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -216,11 +234,14 @@ header {
 }
 
 #dropdown-item-2{
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #CAD1E2;
     left: 18.02%;
     right: 36.94%;
     top: 16.67%;
     bottom: 16.67%;
-    color: #1352AF;
+    color: #51535F;
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -232,11 +253,14 @@ header {
 }
 
 #dropdown-item-3{
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 1px solid #CAD1E2;
     left: 18.02%;
     right: 36.94%;
     top: 16.67%;
     bottom: 16.67%;
-    color: #1352AF;
+    color: #51535F;
     font-family: Inter;
     font-style: normal;
     font-weight: 600;
@@ -256,15 +280,14 @@ header {
 }
 
 #busca {
-    float: right;
+    float: left;
     height:33px;
     width:360px;
-    border-bottom: 1px solid #000000;
 }
 
 #busca-1 {
     background-color: transparent;
-    border-color: transparent;
+    border-color: #A9A9A9;
 }
 
 #busca-2 {
@@ -274,75 +297,92 @@ header {
 }
 
 .card {
+    margin-top: 24px;
     border: 1px solid #C4C4C4;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    height: 309px;
+    width: 360px;
 }
 
 .card-btn{
-    margin-top: 6px;
+    color: white;
+    border: transparent;
+    border-radius: 16px;
+    margin-top: 15px;
     float: right;
-    width: 74px;
+    width: 81px;
     height: 24px;
-    background-color: #C4C4C4;
+    background-color: #397EF3;
     font: Inter;
     font-size: 12px;
     font-style: normal;
     line-height: 18px;
 }
 
-.card-img-top{
-    height: 120px;
+.card-text-info{
+    font-family: Inter;
+    font-style: normal;
+    font-size: 14px;
+    margin-top: 15px;
+    width: 311px;
+    height: 51px;
+    float: left;
 }
 
 .card-text-nome{
-    margin-top: 10px;
+    border-right: 1px solid #CAD1E2;
+    margin-top: 3px;
     float: left;
-    width: 75px;
+    width: 94.43px;
     height: 18px;
     font: Inter;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     line-height: 18px;
 }
 
-.card-title-tela1{
-    font: Nunito;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 30px;
-}
-
-.card-text-tela1{
+.card-text-localizacao{
+    margin-left: 14.45px;
+    margin-top: 3px;
+    float: left;
+    width: 117px;
+    height: 18px;
     font: Inter;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 18px;
 }
 
 .imagem-user-icon{
-    margin-right: 5px;
-    margin-top: 10px;
+    margin-top: 25px;
     float: left;
     width: 16px;
     height: 16px;
 }
 
-.card-text-divisao{
-    margin-left: 1px;
-    margin-top: 8px;
+.card-nome-escola{
+    color: #51535F;
+    margin-left: 4px;
+    margin-top: 25px;
     float: left;
-    font-size: 15px;
+    width: 197px;
+    height: 18px;
+    font-size: 12px;
 }
 
-.card-text-localizacao{
-    margin-left: 15px;
-    margin-top: 10px;
-    float: left;
-    width: 90px;
-    height: 18px;
-    font: Inter;
-    font-size: 12px;
-    font-style: normal;
-    line-height: 18px;
+.btn-last{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 65px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #397EF3;
+    background-color: transparent;
+    border: 1px solid #397EF3;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 248px;
+    height: 68px;
 }
 
 /* Card payment e card payment info */
