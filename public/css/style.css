@@ -189,9 +189,10 @@ header {
 /* estrutura-tela-1 */
 
 .imagem-banner{
-    width: 1440px;
-    margin-left: -130px;
     margin-top: 23px;
+    background: #EEF3F7;
+    padding: 90px;
+    text-align: center;
 }
 
 #titulo{
@@ -279,29 +280,28 @@ header {
     margin-left: 1.5ch ;
 }
 
-#busca {
-    float: left;
+.busca {
     height:33px;
     width:360px;
+    position: relative;
 }
 
-#busca-1 {
+.busca .fa-search {
+    position: absolute;
+    top: 13px;
+    left: 12px;
+}
+
+.busca input {
     background-color: transparent;
     border-color: #A9A9A9;
-}
-
-#busca-2 {
-    background-color: transparent;
-    border-color: transparent;
-    color: #727272;
+    padding-left: 40px;
 }
 
 .card {
     margin-top: 24px;
     border: 1px solid #C4C4C4;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
-    height: 309px;
-    width: 360px;
 }
 
 .card-btn{
