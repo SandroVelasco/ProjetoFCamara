@@ -14,7 +14,7 @@ ul {
 
 a, a:hover {
     text-decoration: none;
-    color: #727272;
+    color: black;
 }
 
 h3 {
@@ -31,13 +31,8 @@ header {
     margin-top: 13px;
 }
 
-.navbar-logo {
-    padding: 12px 63px;
-    background-color: #C4C4C4;    
-}
-
 .navbar-list {
-    height: 100%;
+    margin: 0 0 0 30px;
 }
 
 .navbar-list ul {
@@ -56,9 +51,13 @@ header {
 }
 
 .navbar-donate {
-    background-color: #c4c4c4;
-    padding: 5px 10px;
-    margin-right: 47px;
+    background-color: #FCCD54;
+    padding: 12px 7px 10px 7px;
+    margin-right: 37px;
+    border-radius: 5px;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .navbar-user {
@@ -93,11 +92,12 @@ header {
 .navbar-user-dropdown {
     display: block;
     margin: 0 10px;
+    align-self: start;
 }
 
 .navbar-user-dropdown i {
     font-size: 1.8rem;
-    color: #C4C4C4;
+    color: #397EF3;
 }
 
 .navbar-user-dropdown i:hover {
