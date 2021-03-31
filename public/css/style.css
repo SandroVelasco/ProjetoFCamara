@@ -523,11 +523,11 @@ p.card-payment-info-description:last-child {
 
 .card-confirmacao-text{
     width: 247px;
-    height: 48px;
+    height: 42px;
     font: Inter;
     color:#1352AF;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 130%;
 }
 
 .card-confirmacao-body{
@@ -572,7 +572,7 @@ p.card-payment-info-description:last-child {
     font-size: 16px;
     width: 101px;
     height: 24px;
-    margin-left: 110px;
+    margin-left: 200px;
 }
 
 .card-confirmacao-produtos-subtotal{
@@ -580,7 +580,7 @@ p.card-payment-info-description:last-child {
     float: left;
     margin-left: 115px;
     width: 600px;
-    height: 58px;
+    height: 88px;
 }
 
 .card-confirmacao-valor{
@@ -595,97 +595,105 @@ p.card-payment-info-description:last-child {
 }
 
 .confirmacao-info-box{
+    background-color: #fff5f5;
+    margin-right: 35px;
+    border-radius: 32px;
+    box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
     float: right;
     width: 375px;
-    height: 650px;
+    height: 528px;
 }
 
 .confirmacao-info-box-title{
     margin-top: 35px;
-    margin-left: 37px;
-    color: #212832;
+    margin-left: 63px;
+    color: #397EF3;
+    font-family: Nunito;
+    font-style: normal;
     font-size: 24px;
-    width: 308.96px;
+    width: 224px;
     height: 43px;
 }
 
 .confirmacao-info-box-subtitle1{
-    margin-left: 37px;
-    margin-top: 31px;
+    margin-left: 63px;
+    margin-top: 19px;
     color: #000000;
     font-size: 20px;
     width: 178.26px;
     height: 24px;
 }
 
-.confirmacao-info-box-subtitle2{
-    margin-left: 37px;
-    margin-top: 27px;
-    color: #000000;
-    font-size: 20px;
-    width: 178.26px;
-    height: 24px;
-}
 
 .confirmacao-info-box-content1{
-    margin-left: 37px;
-    margin-top: 9px;
+    font-style: normal;
+    font-weight: 300;
+    color: #51535F;
+    font-family: Inter;
+    margin-left: 63px;
+    margin-top: 32px;
     font-size: 16px;
-    width: 300px;
-    height: 44px;
+    width: 236px;
+    height: 77px;
 }
 
 .confirmacao-info-box-content2{
-    margin-left: 37px;
-    margin-top: 16px;
+    font-style: normal;
+    font-weight: 300;
+    color: #51535F;
+    font-family: Inter;
+    margin-left: 63px;
+    margin-top: 24px;
     font-size: 16px;
-    width: 289px;
+    width: 258px;
     height: 76px;
 }
 
 .confirmacao-info-box-content3{
-    margin-left: 37px;
-    margin-top: 5px;
+    font-style: normal;
+    font-weight: 300;
+    color: #51535F;
+    font-family: Inter;
+    margin-left: 63px;
+    margin-top: 24px;
     font-size: 16px;
-    width: 297px;
-    height: 70px;
-}
-
-.confirmacao-info-box-content4{
-    margin-left: 37px;
-    margin-top: 16px;
-    font-size: 16px;
-    width: 288.7px;
-    height: 78px;
+    width: 263px;
+    height: 71px;
 }
 
 .confirmacao-checkbox{
     font-size: 16px;
-    margin-top: 34px;
-    margin-left: 150px;
+    margin-top: 21px;
+    margin-left: 65px;
     float: left;
     width: 407px;
     height: 45px;
 }
 
 .botao-realizar-doacao{
+    box-sizing: border-box;
+    color: white;
     font-size: 16px;
-    background-color: #E2E6EF;
-    border-radius: 32px;
-    border: transparent;
-    margin-left: 510px;
-    margin-top: 59px;
-    width: 214px;
-    height: 66px;
+    background-color: #397EF3;
+    border-radius: 5px;
+    border: 1px solid #397EF3;
+    margin-left: 50px;
+    margin-top: 110px;
+    width: 175.06px;
+    height: 48px;
 }
 
 .botao-voltar-confirmacao{
     float: left;
-    margin-top: -50px;
+    margin-top: -40px;
     margin-left: 160px;
     border: transparent;
     background-color: transparent;
     font-size: 20px;
     width: 85px;
     height: 24px;
+}
+
+#add-um-real{
+    color: #0B4FAB;
 }
