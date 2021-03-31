@@ -136,6 +136,25 @@ header {
 .card-d-info {
     flex-grow: 1;
     flex-basis: 0;
+
+    background: rgba(255, 146, 146, 0.1);
+    padding: 27px 20px;
+    height: max-content;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
+    border-radius: 32px;
+}
+
+.card-d-info-title {
+    color: #528EF5;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+}
+
+.card-d-info-subtitle {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 10px 0;
 }
 
 .card-d-localization {
@@ -154,42 +173,19 @@ header {
 
 /* Product box */
 .product-box {
-    border: 1px solid #51535F;
     border-radius: 10px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 214px;
     height: 172px;
     text-align: center;
     font-size: 14px;
     padding: 5px 15px;
-    margin-right: 30px;
+    background: white;
 }
 
-.product-box-description {
-    color: #212832;
-    font-weight: 500;
+.product-logo {
+    
 }
-
-.product-box-price {
-    font-weight: 600;
-}
-
-.product-box-footer {
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.product-box-square {
-    width: 27px;
-    height: 27px;
-    border: 1px solid black;
-}
-
-.product-box label {
-    font-weight: 300;
-}
+/* */
 
 .btn-back {
     color: #51535F;
