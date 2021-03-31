@@ -2,9 +2,9 @@ class Middleware {
   constructor() {}
 
   /**
-   * Middleware para o IndexController
+   * Controle de sessão (não implementado)
    */
-  static indexController(req, res, next) {
+  static sessionCheck(req, res, next) {
     next();
   }
 }

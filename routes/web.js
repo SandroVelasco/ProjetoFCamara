@@ -1,16 +1,13 @@
+const { Router } = require('express');
 const express = require('express');
 const router = express.Router();
-const indexController = require('./../controllers/IndexController');
+const appController = require('./../controllers/AppController');
 const Middleware = require('./../controllers/Middleware');
 
 /**
- * Index Controller
+ * App Controller
  */
-router.get('/', Middleware.indexController, indexController.index);
-router.get('/doacao', Middleware.indexController, indexController.doacao);
-router.get('/confirmacao', Middleware.indexController, indexController.confirmacao);
-router.get('/pagamento', Middleware.indexController, indexController.pagamento);
-router.get('/agradecimento', Middleware.indexController, indexController.agradecimento);
-router.get('/anunciar/:page', Middleware.indexController, indexController.anunciar);
+router.get('/pesquisar', Middleware.sessionCheck, appController.pesquisar);
+router.get('/doar/:page', Middleware.sessionCheck, appController.doar);
 
 module.exports = router;
