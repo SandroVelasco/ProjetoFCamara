@@ -14,7 +14,7 @@ ul {
 
 a, a:hover {
     text-decoration: none;
-    color: #727272;
+    color: black;
 }
 
 h3 {
@@ -51,9 +51,13 @@ header {
 }
 
 .navbar-donate {
-    background-color: #c4c4c4;
-    padding: 5px 10px;
+    background-color: #FCCD54;
+    padding: 12px 7px 10px 7px;
     margin-right: 47px;
+    border-radius: 5px;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
 }
 
 .navbar-user {
