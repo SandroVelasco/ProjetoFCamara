@@ -249,6 +249,11 @@ header {
 
 .btn-continue:hover {
     color: white;
+    background: #0060C7;
+}
+
+.btn-continue:active {
+    background: #5E97D5;
 }
 
 /* estrutura-tela-1 */
@@ -499,7 +504,20 @@ header {
 .card-payment-buttons {
     display: flex;
     width: 393px;
-    justify-content: space-between;
+}
+
+.card-payment-buttons a:last-child {
+    margin-left: 32px;
+}
+
+.card-payment-buttons .btn-back {
+    font-size: 20px;
+}
+
+.card-payment-buttons .btn-continue {
+    padding: 9px 14px;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 .card-payment-info {
@@ -747,6 +765,10 @@ p.card-payment-info-description:last-child {
     margin-top: 110px;
     width: 175.06px;
     height: 48px;
+}
+
+.botao-realizar-doacao a {
+    color: white;
 }
 
 .botao-voltar-confirmacao{
