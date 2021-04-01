@@ -796,6 +796,14 @@ footer h6 {
     color: #E2E6EF;
 }
 
+.footer-column {
+    margin-right: 114px;
+}
+
+.footer-column:last-child {
+    margin-right: 0;
+}
+
 .footer-column ul:last-child {
     margin-bottom: 0;
 }
