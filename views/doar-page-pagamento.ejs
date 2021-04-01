@@ -102,7 +102,7 @@
    * Tratamento de texto nos campos do formulário 
    */
 
-   // Tratamento de texto para o campo card_number
+  // Tratamento de texto para o campo card_number
   var input_card_number = document.querySelector('input[name="card_number"]');
 
   input_card_number.addEventListener("keyup", function(e) {
@@ -120,12 +120,18 @@
           this.value = this.value + " ";
         }
       });
-
-      console.log(this.value.length);
     }
   });
 
+  // Tratamento de texto para o campo card_due_date
+  var input_card_due_date = document.querySelector('input[name="card_due_date"]');
 
+  input_card_due_date.addEventListener("keyup", function(e) {
+    if(e.keyCode != 8) {
+      
+      if(this.value.length == 2) this.value = this.value + "/";
+    }
+  });
   
 </script>
 
