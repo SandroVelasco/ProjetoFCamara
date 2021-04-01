@@ -799,3 +799,7 @@ footer h6 {
 .footer-column ul:last-child {
     margin-bottom: 0;
 }
+
+.footer-logo {
+    margin-top: 158px;
+}
