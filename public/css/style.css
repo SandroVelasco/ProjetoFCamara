@@ -3,7 +3,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-*, h1, h3, h5, p {
+*, h1, h3, h5, p, ul {
     margin: 0;
     padding: 0;
 }
@@ -758,4 +758,48 @@ p.card-payment-info-description:last-child {
 
 #add-um-real{
     color: #0B4FAB;
+}
+
+/* Footer */
+footer {
+    padding: 60px 0;
+    background: #51535F;
+    color: white;
+    box-sizing: border-box;
+}
+
+footer a {
+    color: #E2E6EF;
+}
+
+footer a:hover {
+    color: #E2E6EF;
+}
+
+footer ul {
+    margin-bottom: 50px;
+}
+
+footer ul li {
+    margin-bottom: 16px;
+}
+
+footer ul li:last-child {
+    margin-bottom: 0;
+}
+
+footer h6 {
+    text-transform: uppercase;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #E2E6EF;
+}
+
+.footer-column ul:last-child {
+    margin-bottom: 0;
+}
+
+.footer-logo {
+    margin-top: 158px;
 }
