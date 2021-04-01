@@ -240,7 +240,6 @@ header {
     background: #397EF3;
     border-radius: 5px;
     padding: 11px 20px;
-    color: #212832;
     color: white;
     font-weight: 700;
     font-size: 20px;
@@ -526,6 +525,7 @@ header {
     padding: 9px 14px;
     font-size: 14px;
     text-transform: uppercase;
+    height: max-content;
 }
 
 .card-payment-info {
