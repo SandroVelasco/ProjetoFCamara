@@ -478,6 +478,14 @@ header {
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
     margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform .2s;
+}
+
+.box-payment-method:hover {
+    transform: scale(1.2);
 }
 
 .box-payment-img {
@@ -521,7 +529,7 @@ header {
 }
 
 .card-payment-info {
-    background-color: rgba(70, 110, 182, 0.2);
+    background-color: rgba(255,146,146, 0.1);
     padding: 73px 57px 73px 57px;
     border-radius: 32px;
     flex-basis: 0;
@@ -538,7 +546,7 @@ header {
     font-size: 48px;
     font-weight: 700;
     margin-top: 20px;
-    color: #51535F;
+    color: #397EF3;
 }
 
 .card-payment-info hr {

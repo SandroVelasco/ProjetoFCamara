@@ -14,13 +14,13 @@
         </p>
 
         <div class="d-flex mt-4">
-          <div class="box-payment-method d-flex align-items-center justify-content-center">
+          <div class="box-payment-method">
             <img src="/icons/Paypal_icon.svg" alt="paypal">
           </div>
-          <div class="box-payment-method d-flex align-items-center justify-content-center">
+          <div class="box-payment-method">
             <img src="/icons/Pagseguro_icon.svg" alt="pagseguro">
           </div>
-          <div class="box-payment-method d-flex align-items-center justify-content-center">
+          <div class="box-payment-method">
             <img src="/icons/boleto-logo 1.svg" alt="boleto">
           </div>
         </div>
@@ -61,13 +61,13 @@
 
       <hr>
 
-      <h4 class="card-payment-info-title">Local de entrega</h4>
-      <p class="card-payment-info-description">EMEI José Bonifácio de Andrade e Silva, Santana - São Paulo - SP</p>
+      <h4 class="card-payment-info-title">Número do pedido</h4>
+      <p class="card-payment-info-description">12345678</p>      
 
       <hr>
 
-      <h4 class="card-payment-info-title">Número do pedido</h4>
-      <p class="card-payment-info-description">12345678</p>
+      <h4 class="card-payment-info-title">Local de entrega</h4>
+      <p class="card-payment-info-description">EMEI José Bonifácio de Andrade e Silva, Santana - São Paulo - SP</p>
 
       <hr>
 
@@ -76,5 +76,24 @@
     </div>
   </div>
 </div>
+
+<script>
+  var formasDePagamento = document.querySelectorAll('.box-payment-method');
+
+  formasDePagamento.forEach(value => {
+    value.addEventListener("click", addBorder);
+  })
+
+  function addBorder(e) {
+    removeAllBorders();
+    this.style.border = "1px solid #397EF3";
+  }
+
+  function removeAllBorders() {
+    formasDePagamento.forEach(value => {
+      value.style.border = "none";
+    })
+  }
+</script>
 
 <%- include('./templates/body.ejs') %>
