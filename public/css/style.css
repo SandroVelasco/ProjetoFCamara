@@ -506,7 +506,7 @@ header {
     width: 393px;
 }
 
-.card-payment-buttons button:last-child {
+.card-payment-buttons a:last-child {
     margin-left: 32px;
 }
 
@@ -765,6 +765,10 @@ p.card-payment-info-description:last-child {
     margin-top: 110px;
     width: 175.06px;
     height: 48px;
+}
+
+.botao-realizar-doacao a {
+    color: white;
 }
 
 .botao-voltar-confirmacao{
