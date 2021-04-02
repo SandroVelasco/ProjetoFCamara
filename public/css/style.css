@@ -34,15 +34,31 @@ h3 {
 }
 
 /* Navbar topo */
-header {
+.header-desktop {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-mobile {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 13px;
+}
+
+.header-mobile .fa-bars,
+.header-mobile .fa-user {
+    font-size: 1.5rem;
+    color: #51535F;
+}
+
+.header-mobile .fa-caret-down {
+    font-size: 1.5rem;
+    color: #397EF3;
 }
 
 .navbar-list {
-    margin: 0 0 0 30px;
+    flex-shrink: 0;
 }
 
 .navbar-list ul {
@@ -84,6 +100,7 @@ header {
     display: flex;
     align-items: center;
     position: relative;
+    flex-shrink: 0;
 }
 
 .navbar-user p {
@@ -845,4 +862,15 @@ footer h6 {
 
 .footer-logo {
     margin-top: 158px;
+}
+
+/* Media queries for responsivity */
+@media (min-width: 1200px) {
+    .header-desktop {
+        display: flex;
+    }
+
+    .header-mobile {
+        display: none;
+    }
 }
