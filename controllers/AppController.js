@@ -2,6 +2,14 @@ class AppController {
   constructor() {}
 
   /**
+   * Rota: / 
+   * Método: GET
+   */
+  index(req, res) {
+    res.render("./../views/index");
+  }
+
+  /**
    * Rota: /pesquisar
    * Método: GET
    */

@@ -1,33 +1,46 @@
 <header>
-  <div class="d-flex align-items-center">
-    <img src="/img/Logo.svg" alt="logo">
-
-    <nav class="navbar-list">
-      <ul>
-        <li>
-          <a href="#">Início</a>
-        </li>
-        <li>
-          <a href="#">O que fazemos</a>
-        </li>
-        <li>
-          <a href="#">Como funciona</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-
-  <div class="navbar-user">
-    <a href="#" class="navbar-donate">
-      FAZER UMA DOAÇÃO
-    </a>
-
-    <div class="navbar-user-content">
-      <h5>Olá, Maria Silva</h5>
-      <span>Minha conta</span>
+  <div class="w-100">
+    <!-- Mobile -->
+    <div class="header-mobile">
+      <i class="fas fa-bars" style="font-size: 1.5rem;"></i>
+      <img src="/img/Logo.svg" alt="logo" width="130">
+      <div>
+        <i class="far fa-user"></i>
+        <i class="fas fa-caret-down" alt="dropdown_icon" class="navbar-user-dropdown"></i>
+      </div>
     </div>
-    <div class="navbar-user-dropdown">
-      <i class="fas fa-caret-down" alt="dropdown_icon" class="navbar-user-dropdown"></i>
+
+    <!-- Desktop -->
+    <div class="header-desktop">
+      <img src="/img/Logo.svg" alt="logo">
+
+      <nav class="navbar-list">
+        <ul>
+          <li>
+            <a href="#">Início</a>
+          </li>
+          <li>
+            <a href="#">O que fazemos</a>
+          </li>
+          <li>
+            <a href="#">Como funciona</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="navbar-user">
+        <a href="/pesquisar" class="navbar-donate-link">
+          FAZER UMA DOAÇÃO
+        </a>
+
+        <div class="navbar-user-content">
+          <h5>Olá, Maria Silva</h5>
+          <span>Minha conta</span>
+        </div>
+        <div class="navbar-user-dropdown">
+          <i class="fas fa-caret-down" alt="dropdown_icon"></i>
+        </div>
+      </div>
     </div>
   </div>
 </header>
