@@ -764,6 +764,16 @@ p.card-payment-info-description:last-child {
     color: #0B4FAB;
 }
 
+/* página agradecimentos*/
+
+.agradecimento {
+    background-color: #FEEFA0;
+}
+
+.margemBotao {
+    margin-bottom: 80px;
+}
+
 /* Footer */
 footer {
     padding: 60px 0;
