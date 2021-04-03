@@ -12,10 +12,25 @@ body {
     padding: 0;
 }
 
-h1 {
+h1, h5 {
     font-family: 'Nunito', sans-serif;
+}
+
+h1 {
     font-size: 40px;
     font-weight: 700;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #212832;
+    margin: 0;
 }
 
 ul {
@@ -31,6 +46,16 @@ h3 {
     font-size: 24px;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
+}
+
+/* Genéricas */
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.cor-1 {
+    color: #397EF3;
 }
 
 /* Navbar topo */
@@ -668,7 +693,106 @@ p.card-payment-info-description:last-child {
 
 /* Tela confirmacao */
 
+.confirmacao-box {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 24px;
+    padding: 90px 30px;
+    box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
+    border-radius: 32px;
+    margin-top: 3rem;
+    margin-bottom: 50px;
+}
 
+.confirmacao-box-info {
+    box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
+    border-radius: 32px;
+    background: rgba(255, 146, 146, .1);
+    padding: 45px 70px;
+}
+
+.material-list {
+    display: flex;
+    margin-top: 1.5rem;
+    flex-direction: column;
+}
+
+.material-list li {
+    padding: 17px 0;
+    border-bottom: 1px solid #E2E6EF;
+    display: flex;
+    align-items: center;
+}
+
+.img-box, .img-checkbox {
+    min-width: 88px;
+    text-align: center;
+}
+
+.img-box {
+    height: 88px;
+}
+
+.img-checkbox {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.img-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.material-description {
+    margin-left: 10px;
+}
+
+.material-description-cashback {
+    font-size: 14px;
+    color: #1352AF;
+}
+
+.material-description-side {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    text-align: end;
+}
+
+.material-description-side .fa-times-circle {
+    font-size: 20px;
+    color: #A9A9A9;
+}
+
+.material-description-side .material-description-price {
+    margin-top: 41px;
+}
+
+.material-list-add-donation {
+    color: #0B4FAB;
+}
+
+li.material-footer {
+    border-bottom: 0;
+    padding-left: 88px;
+}
+
+.material-footer div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 600;
+}
+
+.material-links {
+    margin-left: 88px;
+}
+
+.material-links .btn-back {
+    padding: 10px 0;
+}
 
 /* Página agradecimentos*/
 
@@ -754,6 +878,24 @@ footer h6 {
     }
 }
 
+@media (max-width: 1199px) {
+    .confirmacao-box {
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+        box-shadow: none;
+        margin-top: 30px;
+        padding: 0 30px;
+    }
+
+    .confirmacao-box h5 {
+        text-align: center;
+    }
+
+    .material-list {
+        margin: 0;
+    }
+}
+
 @media (min-width: 993px) and (max-width: 1199px) {
     .banner h1 {
         font-size: 35px;
@@ -768,6 +910,7 @@ footer h6 {
     .dropdown-items button:first-child {
         margin-left: 0;
     }
+
 }
 
 @media(max-width: 992px) {
@@ -853,6 +996,32 @@ footer h6 {
     .product-price {
         color: #397EF3;
     }
+
+    .donation-info p {
+        font-size: 12px;
+        color: #1152A9;
+    }
+
+    .donation-info i {
+        color: black;
+    }
+
+    li.material-footer {
+        padding-left: 0;
+    }
+
+    .material-links {
+        margin: 0;
+    }
+
+    .material-links .btn-back {
+        display: none;
+    }
+
+    .material-links .btn-continue {
+        display: block;
+        margin: 0;
+    }
 }
 
 @media(min-width: 769px) and (max-width: 992px) {
@@ -880,6 +1049,45 @@ footer h6 {
 
     .banner h1 {
         font-size: 27px;
+    }
+
+    .confirmacao-box {
+        padding: 0;
+    }
+
+    .confirmacao-box h5 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .material-description h6 {
+        font-size: 14px;
+    }
+
+    .material-description-cashback {
+        color: #51535F;
+        font-size: 10px;
+    }
+
+    .material-description-side {
+        display: none;
+    }
+
+    .material-list-add-donation {
+        font-size: 14px;
+        color: #397EF3;
+        font-weight: 500;
+    }
+
+    li.material-footer {
+        padding-left: 20px;
+        padding-right: 15px;
+        border-bottom: 1px solid #E2E6EF;
+        margin-bottom: 26px;
+    }
+
+    .donation-info {
+        margin-left: 20px;
     }
 }
 
