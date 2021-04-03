@@ -436,6 +436,7 @@ h3 {
     border-radius: 5px;
     box-sizing: border-box;
     border: 1px solid #CAD1E2;
+    margin-left: 414px;
     left: 18.02%;
     right: 36.94%;
     top: 16.67%;
@@ -497,7 +498,7 @@ h3 {
 .card-btn{
     color: white;
     border: transparent;
-    border-radius: 4px;
+    border-radius: 16px;
     margin-top: 15px;
     float: right;
     width: 81px;
@@ -537,9 +538,6 @@ h3 {
 }
 
 .card-nome-escola{
-    font-family: Inter;
-    font-weight: 300;
-    line-height: 150%;
     color: #51535F;
     margin-left: 4px;
     margin-top: 25px;
