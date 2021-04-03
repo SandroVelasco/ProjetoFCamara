@@ -82,21 +82,21 @@
 <script>
   // Header dropdown
   const dropdown = document.querySelector('.navbar-dropdown-list');
+  const arrowDown = document.querySelector('.navbar-user-dropdown');
 
-  document.querySelector('.navbar-user-dropdown').addEventListener('click', function() {
-    const currentDropdownDisplay = dropdown.style.display;
-
-    if(currentDropdownDisplay == "none") {
-      dropdown.style.display = "block";
-    } else {
+  arrowDown.addEventListener('click', function() {
+    if(dropdown.style.display == "block") {
       dropdown.style.display = "none";
+    } else {
+      dropdown.style.display = "block";
     }
   });
 
   // Fechar dropdown se usuário clicar fora do elemento
   document.addEventListener('mouseup', function(e) {
-    if(e.target != dropdown && e.target.parentNode != dropdown) {
-      if(dropdown.style.display == "block") {
+    if(dropdown.style.display == "block") {
+
+      if((e.target != dropdown && e.target.parentNode != dropdown) && e.target.parentNode != arrowDown) {
         dropdown.style.display = "none";
       }
     }
