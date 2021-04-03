@@ -2,7 +2,7 @@ class AppController {
   constructor() {}
 
   /**
-   * Rota: / 
+   * Rota: /
    * Método: GET
    */
   index(req, res) {
@@ -22,7 +22,7 @@ class AppController {
    * Método: GET
    */
   doar(req, res) {
-    switch(req.params.page) {
+    switch (req.params.page) {
       case "descricao":
       case "confirmacao":
       case "pagamento":

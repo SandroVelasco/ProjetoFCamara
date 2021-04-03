@@ -143,10 +143,6 @@
 
          <!-- Only on md - -->
         <div class="card-d-links d-lg-none">
-<<<<<<< HEAD
-=======
-          <a href="/pesquisar" class="btn btn-back">< Voltar</a>
->>>>>>> 4e228ff3d2ee2dfce241fd2b53b5f1521dc89aee
           <a href="/doar/confirmacao" class="btn btn-continue">REALIZAR DOAÇÃO</a>
         </div>
       </div>
@@ -156,11 +152,9 @@
 
 <script>
   let inputs = document.querySelectorAll('input[name="modalidade"]');
-
   inputs.forEach(value => {
     value.addEventListener("click", setRadioDivStyle)
   })
-
   function setRadioDivStyle(e) {
     if(e.target.id == "radiobutton01") {
       inputs[0].parentElement.style.opacity = "1";
