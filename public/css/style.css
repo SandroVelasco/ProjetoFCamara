@@ -908,6 +908,10 @@ footer h6 {
         flex-direction: column;
     }
 
+    .card-d-photo {
+        margin-top: 20px;
+    }
+
     .card-d-info {
         margin: 0;
         box-shadow: none;
