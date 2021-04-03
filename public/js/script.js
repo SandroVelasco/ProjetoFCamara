@@ -25,3 +25,5 @@ function OldText () {
   }
 }
 OldText();
+
+window.addEventListener('resize', NewText());
