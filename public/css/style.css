@@ -668,19 +668,14 @@ p.card-payment-info-description:last-child {
 
 /* info tela confirmacao */
 
-#confirmacao-content-box{
+.confirmacao-content-box{
     border-radius: 32px;
-    margin-bottom: 184px;
     box-shadow: 2px 2px 8px rgba(85, 1, 175, 0.24);
-    margin-top: 46px;
     border: 1px solid #EEF3F7;
-    width: 1135px;
-    height: 888px;
+    padding: 90px 30px;
 }
 
 .confirmacao-titulo{
-    margin-top: 104px;
-    margin-left: 115px;
     font-size: 24px;
     font: Nunito;
     line-height: 36px;
@@ -688,52 +683,29 @@ p.card-payment-info-description:last-child {
 
 .card-confirmacao-produtos1{
     border-bottom: 1px solid #E2E6EF;
-    float: left;
-    margin-left: 115px;
-    margin-top: 37px;
-    width: 600px;
-    height: 122px;
 }
 
 .card-confirmacao-produtos{
     border-bottom: 1px solid #E2E6EF;
-    float: left;
-    margin-left: 115px;
-    width: 600px;
-    height: 122px;
 }
 
 .card-confirmacao-img{
-    margin-left: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 82px;
-    height: 82px;
+    
 }
 
 .card-confirmacao-title{
-    width: 397px;
-    height: 18px;
-    margin-bottom: 20px;
-    font: Inter;
     font-size: 20px;
-    line-height: 24px;
 }
 
 .card-confirmacao-text{
-    width: 247px;
-    height: 42px;
-    font: Inter;
     color:#1352AF;
     font-size: 14px;
-    line-height: 130%;
 }
 
 .card-confirmacao-body{
     height: 100px;
     width: 300px;
     margin-top: 10px;
-    float: left;
 }
 
 .imagem-produto{
@@ -742,85 +714,48 @@ p.card-payment-info-description:last-child {
 
 .icone-lixo{
     margin-left: 40px;
-    float: right;
     width: 11px;
 }
 
 .card-confirmacao-preco{
-    width: 64px;
-    height: 24px;
     margin-top: 80px;
-    float: right;
-    font: Inter;
     color: #212832;
 }
 
-.imagem-lixo{
-    margin-right: 10px;
-    float: right;
-    margin-top: 10px;
-    width: 18px;
-    height: 20px;
-}
+.imagem-lixo{}
 
 .card-confirmacao-subtotal{
     margin-top: 17px;
-    float: left;
     color: #212832;
-    font: Inter;
     font-size: 16px;
     width: 101px;
     height: 24px;
-    margin-left: 200px;
 }
 
 .card-confirmacao-produtos-subtotal{
     border-bottom:  1px solid #E2E6EF;
-    float: left;
-    margin-left: 115px;
-    width: 600px;
-    height: 88px;
 }
 
 .card-confirmacao-valor{
-    margin-right: 43px;
-    margin-top: 19px;
-    float: right;
     color: #212832;
-    font: Inter;
     font-size: 16px;
-    width: 68px;
-    height: 21px;
 }
 
 .confirmacao-info-box{
     background-color: #fff5f5;
-    margin-right: 35px;
-    border-radius: 32px;
     box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
-    float: right;
-    width: 375px;
-    height: 528px;
 }
 
 .confirmacao-info-box-title{
-    margin-top: 35px;
-    margin-left: 63px;
     color: #397EF3;
     font-family: Nunito;
     font-style: normal;
     font-size: 24px;
-    width: 224px;
-    height: 43px;
 }
 
 .confirmacao-info-box-subtitle1{
-    margin-left: 63px;
-    margin-top: 19px;
     color: #000000;
     font-size: 20px;
-    width: 178.26px;
-    height: 24px;
 }
 
 
@@ -828,24 +763,14 @@ p.card-payment-info-description:last-child {
     font-style: normal;
     font-weight: 300;
     color: #51535F;
-    font-family: Inter;
-    margin-left: 63px;
-    margin-top: 32px;
     font-size: 16px;
-    width: 236px;
-    height: 77px;
 }
 
 .confirmacao-info-box-content2{
     font-style: normal;
     font-weight: 300;
     color: #51535F;
-    font-family: Inter;
-    margin-left: 63px;
-    margin-top: 24px;
     font-size: 16px;
-    width: 258px;
-    height: 76px;
 }
 
 .confirmacao-info-box-content3{
@@ -853,20 +778,11 @@ p.card-payment-info-description:last-child {
     font-weight: 300;
     color: #51535F;
     font-family: Inter;
-    margin-left: 63px;
-    margin-top: 24px;
     font-size: 16px;
-    width: 263px;
-    height: 71px;
 }
 
 .confirmacao-checkbox{
     font-size: 16px;
-    margin-top: 21px;
-    margin-left: 65px;
-    float: left;
-    width: 407px;
-    height: 45px;
 }
 
 .botao-realizar-doacao{
@@ -876,10 +792,6 @@ p.card-payment-info-description:last-child {
     background-color: #397EF3;
     border-radius: 5px;
     border: 1px solid #397EF3;
-    margin-left: 50px;
-    margin-top: 110px;
-    width: 175.06px;
-    height: 48px;
 }
 
 .botao-realizar-doacao a {
@@ -887,14 +799,9 @@ p.card-payment-info-description:last-child {
 }
 
 .botao-voltar-confirmacao{
-    float: left;
-    margin-top: -40px;
-    margin-left: 160px;
     border: transparent;
     background-color: transparent;
     font-size: 20px;
-    width: 85px;
-    height: 24px;
 }
 
 #add-um-real{
