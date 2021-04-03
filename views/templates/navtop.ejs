@@ -36,6 +36,40 @@
         <div class="navbar-user-content">
           <h5>Olá, Maria Silva</h5>
           <span>Minha conta</span>
+
+          <div class="navbar-dropdown-list">
+            <span class="navbar-dropdown-list-title">Usuário</span>
+
+            <a href="">
+              <i class="far fa-user"></i>
+              Minha conta
+            </a>
+            <a href="">
+              <i class="far fa-heart"></i>
+              Minhas doações
+            </a>
+            <a href="">
+              <i class="far fa-edit"></i>
+              Meus anúncios
+            </a>
+
+            <span class="navbar-dropdown-list-title">Atividades</span>
+
+            <a href="" class="activity-link">
+              <i class="fas fa-donate"></i>
+              Fazer uma doação
+            </a>
+
+            <a href="" class="activity-link">
+              <i class="fas fa-th"></i>
+              Fazer um anúncio
+            </a>
+
+            <a href="" class="activity-link">
+              <i class="far fa-question-circle"></i>
+              Ajuda
+            </a>
+          </div>
         </div>
         <div class="navbar-user-dropdown">
           <i class="fas fa-caret-down" alt="dropdown_icon"></i>
@@ -44,3 +78,27 @@
     </div>
   </div>
 </header>
+
+<script>
+  // Header dropdown
+  const dropdown = document.querySelector('.navbar-dropdown-list');
+
+  document.querySelector('.navbar-user-dropdown').addEventListener('click', function() {
+    const currentDropdownDisplay = dropdown.style.display;
+
+    if(currentDropdownDisplay == "none") {
+      dropdown.style.display = "block";
+    } else {
+      dropdown.style.display = "none";
+    }
+  });
+
+  // Fechar dropdown se usuário clicar fora do elemento
+  document.addEventListener('mouseup', function(e) {
+    if(e.target != dropdown && e.target.parentNode != dropdown) {
+      if(dropdown.style.display == "block") {
+        dropdown.style.display = "none";
+      }
+    }
+  });
+</script>

@@ -110,6 +110,7 @@ h3 {
 
 .navbar-user-content {
     margin-left: 8px;
+    position: relative;
 }
 
 .navbar-user-content h5,
@@ -139,6 +140,49 @@ h3 {
 
 .navbar-user-dropdown i:hover {
     cursor: pointer;
+}
+
+.navbar-dropdown-list {
+    position: absolute;
+    width: max-content;
+    background-color: white;
+    padding: 14px 0px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 0px 10px 10px;
+    color: #212832;
+    display: none;
+}
+
+.navbar-dropdown-list a {
+    display: block;
+    padding: 7px 23px;
+}
+
+.navbar-dropdown-list a:hover {
+    background: #E2E6EF;
+    color: #1152A9;
+}
+
+.navbar-dropdown-list a i {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.navbar-dropdown-list .activity-link {
+    color: #51535F;
+}
+
+.navbar-dropdown-list-title {
+    color: #818181;
+    font-weight: 500;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+    padding: 0 23px;
+}
+
+.navbar-dropdown-list-title:not(:first-child) {
+    margin-top: 10px;
 }
 
 /* Card donation */
