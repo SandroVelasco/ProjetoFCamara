@@ -26,4 +26,5 @@ function OldText () {
 }
 OldText();
 
-window.addEventListener('resize', NewText());
+window.addEventListener('resize', NewText);
+window.addEventListener('resize', NewText);
