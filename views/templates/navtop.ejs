@@ -37,7 +37,7 @@
         </a>
 
         <div class="navbar-user-content d-flex">
-          <div class="d-none d-lg-block">
+          <div class="d-none d-lg-block" id="user-info">
             <h5>Olá, Maria Silva</h5>
             <span>Minha conta</span>
           </div>
@@ -97,21 +97,29 @@
   let dropdown = document.querySelector('.navbar-user-content .navbar-dropdown-list');
   const userDropdown = document.querySelector('.navbar-user-content');
   const barsDropdown = document.querySelector('.header .bars-dropdown');
+  const divUserInfo = document.querySelector('#user-info');
+  const divUserDropdown = document.querySelector('.navbar-user-dropdown');
+  const divUserDropdownMobile = document.querySelector('.navbar-user-dropdown-mobile');
 
-  function toggleDropdown(e) {
-    if(this == userDropdown) {
-      dropdown = document.querySelector('.navbar-user-content .navbar-dropdown-list');
+  function toggleDropdown(e) {    
+    if(!(this != e.target)) {
+
+      if(this == userDropdown) {
+        dropdown = document.querySelector('.navbar-user-content .navbar-dropdown-list');
+      }
+
+      if(this == barsDropdown) {
+        dropdown = document.querySelector('.header .navbar-dropdown-list');
+      }
+
+      if(dropdown.style.display == "block") {
+        dropdown.style.display = "none";
+      } else {
+        dropdown.style.display = "block";
+      }
+
     }
 
-    if(this == barsDropdown) {
-      dropdown = document.querySelector('.header .navbar-dropdown-list');
-    }
-
-    if(dropdown.style.display == "block") {
-      dropdown.style.display = "none";
-    } else {
-      dropdown.style.display = "block";
-    }
   }
 
   userDropdown.addEventListener('click', toggleDropdown);
@@ -123,10 +131,10 @@
     if(dropdown.style.display == "block") {
 
       const validacoes = [
-        e.target != dropdown,                 // Se elemento clicado não for dropdown 
-        e.target.parentNode != dropdown,      // Se pai do elemento do elemento clicado não for dropdown
-        e.target.parentNode != userDropdown,  // Se pai do elemento clicado não for userDropdown
-        e.target.parentNode != barsDropdown   // Se pai do elemento clicado não for barsDropdown
+        e.target != dropdown,         // Se elemento clicado não for dropdown 
+        e.target != userDropdown,
+        e.target != barsDropdown,
+        e.target.parentNode != dropdown
       ];
 
       let checker = array => validacoes.every(Boolean);
