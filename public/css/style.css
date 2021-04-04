@@ -588,27 +588,45 @@ h3 {
 }
 
 /* Card payment e card payment info */
+.card-flex {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+}
+
 .card-payment {
-    flex-grow: 2;
-    flex-basis: 0;
-    margin: 0 20px 0 0;
+    flex: 1 1 600px;
     box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
-    padding: 94px;
+    padding: 94px 20px;
     border-radius: 32px;
     display: flex;
     justify-content: center;
+}
+
+.card-payment-info {
+    flex: 1 1 300px;
+    background-color: rgba(255,146,146, 0.1);
+    padding: 73px 57px 73px 57px;
+    border-radius: 32px;
 }
 
 .card-payment-paragraph {
     font-weight: 300;
 }
 
+.payment-methods {
+    display: flex;
+    margin-top: 25px;
+    grid-gap: 24px;
+    flex-wrap: wrap;
+}
+
 .box-payment-method {
+    flex: 0 1 126px;
     height: 64px;
-    width: 128px;
+    /* width: 128px; */
     border-radius: 10px;
     box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
-    margin-right: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -627,22 +645,25 @@ h3 {
     height: 100%;
 }
 
+.payment-form {
+    width: 90%;
+}
+
 .payment-form input[type="text"] {
     border: 0px;
     border-bottom: 2px solid #CAD1E2;
     font-size: 20px;
-    width: 393px;
+    width: 100%;
     padding-left: 10px;
     outline: none;
 }
 
-.payment-form-input-sm {
-    width: 151px !important;
+.payment-form input.payment-form-input-sm {
+    width: 151px;
 }
 
 .card-payment-buttons {
     display: flex;
-    width: 393px;
 }
 
 .card-payment-buttons a:last-child {
@@ -660,12 +681,9 @@ h3 {
     height: max-content;
 }
 
-.card-payment-info {
-    background-color: rgba(255,146,146, 0.1);
-    padding: 73px 57px 73px 57px;
-    border-radius: 32px;
-    flex-basis: 0;
-    flex-grow: 1;
+.card-payment-mobile-title {
+    text-align: center;
+    width: 100%;
 }
 
 .card-payment-info-title {
@@ -675,7 +693,7 @@ h3 {
 
 .card-payment-info-value {
     font-family: 'Nunito', sans-serif;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 700;
     margin-top: 20px;
     color: #397EF3;
@@ -879,6 +897,10 @@ footer h6 {
 }
 
 @media (max-width: 1199px) {
+    html {
+        font-size: 90%;
+    }
+
     .confirmacao-box {
         grid-template-columns: 1fr;
         grid-column-gap: 0;
@@ -1022,6 +1044,34 @@ footer h6 {
         display: block;
         margin: 0;
     }
+
+    .payment-form {
+        width: 100%;
+    }
+
+    .payment-form input[type="text"] {
+        font-size: 16px;
+    }
+
+    .card-payment {
+        padding: 40px 20px;
+    }
+
+    .payment-methods {
+        margin: 0;
+    }
+
+    .card-payment-content {
+        width: 65%;
+    }
+
+    .card-payment-info {
+        order: -1;
+    }
+
+    .card-payment-mobile-title {
+        order: -2;
+    }
 }
 
 @media(min-width: 769px) and (max-width: 992px) {
@@ -1088,6 +1138,16 @@ footer h6 {
 
     .donation-info {
         margin-left: 20px;
+    }
+
+    .card-payment-buttons a.btn-continue {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .card-payment-content {
+        width: 100%;
     }
 }
 
@@ -1190,5 +1250,21 @@ footer h6 {
 
     .card-d-modalidade .form-check label {
         font-size: 14px;
+    }
+
+    .payment-form input.payment-form-input-sm {
+        width: 100px;
+    }
+
+    .payment-form input[type="text"] {
+        font-size: 14px;
+    }
+
+    h5 {
+       font-size: 18px; 
+    }
+
+    .card-payment-paragraph {
+        font-size: 10px;
     }
 }

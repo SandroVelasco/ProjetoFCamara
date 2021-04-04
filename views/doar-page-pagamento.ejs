@@ -3,17 +3,27 @@
 <div class="container" style="min-height: 100%;">
   <%- include('./templates/navtop.ejs') %>
 
-  <div class="d-flex mt-5">
-    <div class="card-payment">
-      
-      <div style="width: max-content;">
-        <h3>Escolha abaixo sua forma de pagamento</h3>
-        <p class="mt-3">
+  <div class="card-flex my-5">
+    <div class="card-payment-mobile-title d-lg-none">
+      <h5>Escolha abaixo sua forma de pagamento</h5>
+      <p class="mt-3">
           <i class="fas fa-lock"></i>
           <span class="card-payment-paragraph">Pagamento seguro</span>
         </p>
+    </div>
 
-        <div class="d-flex mt-4">
+    <div class="card-payment">
+      
+      <div class="card-payment-content">
+        <div class="d-none d-lg-block">
+          <h3>Escolha abaixo sua forma de pagamento</h3>
+          <p class="mt-3">
+            <i class="fas fa-lock"></i>
+            <span class="card-payment-paragraph">Pagamento seguro</span>
+          </p>
+        </div>
+
+        <div class="payment-methods">
           <div class="box-payment-method">
             <img src="/icons/Paypal_icon.svg" alt="paypal">
           </div>
@@ -36,8 +46,8 @@
               <input type="text" placeholder="Número do cartão" name="card_number" maxlength="19">
             </div>
             
-            <div class="d-flex">
-              <div class="form-group mb-4" style="margin-right: 88px;">
+            <div class="d-flex justify-content-between">
+              <div class="form-group mb-4">
                 <input type="text" placeholder="Vencimento" class="payment-form-input-sm" name="card_due_date" maxlength="5">
               </div>
               
@@ -49,7 +59,7 @@
 
           <!-- Voltar ou finalizar pagamento -->
           <div class="card-payment-buttons mt-5">
-            <a href="/doar/confirmacao" class="btn btn-back">< Voltar</a>
+            <a href="/doar/confirmacao" class="btn btn-back d-none d-md-block">< Voltar</a>
             <a href="/doar/agradecimentos" class="btn btn-continue">Finalizar pagamento</a>
           </div>
         </div>
