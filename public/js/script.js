@@ -30,28 +30,41 @@ document.addEventListener("DOMContentLoaded", function (event) {
   window.addEventListener("resize", NewText);
   window.addEventListener("resize", OldText);
 
+let help1 = document.querySelector('#help1');
+let help2 = document.querySelector('#help2');
+let help = document.querySelector('#help');
+let helped = document.querySelector('#helped');
+
+help.addEventListener('click', () => {
+  help1.style.display = 'block';
+  help2.style.display = 'none';
+})
+
+helped.addEventListener('click', () => {
+  help1.style.display = 'none';
+  help2.style.display = 'block';
+})
+
   let leftArrow = document.querySelector("#leftButton");
   let rightArrow = document.querySelector("#rightButton");
   let histories = document.querySelectorAll(".divHistories");
   let index = 0;
 
   leftArrow.addEventListener("click", () => {
-    histories[index].ClassList.add("notSelected");
-    histories[index].ClassList.remove("selected");
+    histories[index].style.display = 'none';
     index -= 1;
     if (index < 0) {
       index = 2;
     }
-    histories[index].ClassList.add("selected");
+    histories[index].style.display = 'flex';
   });
 
   rightArrow.addEventListener("click", () => {
-    histories[index].ClassList.add("notSelected");
-    histories[index].ClassList.remove("selected");
+    histories[index].style.display = 'none';
     index += 1;
     if (index >= histories.length) {
       index = 0;
     }
-    histories[index].ClassList.add("selected");
+    histories[index].style.display = 'flex';
   });
 });

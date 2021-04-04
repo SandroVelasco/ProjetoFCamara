@@ -462,6 +462,14 @@ h3 {
     text-align: center;
 }
 
+#help1 {
+    display: block;
+}
+
+#help2 {
+    display: none;
+}
+
 .history h3 {
     text-align: center;
     margin-bottom: 80px;
@@ -486,14 +494,6 @@ h3 {
     padding-left: 30px;
     margin-left: 5%;
     width: 70%;
-}
-
-.selected {
-    display: flex;
-}
-
-.notSelected {
-    display: none;
 }
 
 #karinaDiv {
