@@ -1393,9 +1393,9 @@ footer h6 {
         font-size: 14px;
     }
 
-    h5 {
-       font-size: 18px; 
-    }
+    h1 { font-size: 32px; }        
+
+    h5 { font-size: 18px; }
 
     .card-payment-paragraph {
         font-size: 10px;
