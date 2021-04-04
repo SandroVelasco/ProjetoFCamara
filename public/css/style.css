@@ -38,6 +38,10 @@ ul {
     list-style-type: none;
 }
 
+a {
+    height: max-content;
+}
+
 a, a:hover {
     text-decoration: none;
     color: black;
@@ -284,8 +288,10 @@ h3 {
 .card-d-links {
     display: flex;
     margin-top: 40px;
-/* Landing page */
+    align-items: center;
 }
+
+/* Landing page */
 
 .main {
     background-image: url(/img/imgLP.svg);
@@ -922,6 +928,57 @@ footer h6 {
     padding: 11px 40px;
     margin: 0;
     border-radius: 10px;
+}
+
+.announcement-flex, .announcement-form {
+    display: flex;
+    grid-gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.announcement-flex .side-progress-bar {
+    flex: 1 0 131px;
+}
+
+.announcement-content {
+    flex: 1 0 720px;
+}
+
+.announcement-form {
+    margin: 0;
+    align-items: center;
+    grid-gap: 10px;
+}
+
+.announcement-form p {
+    height: max-content;
+}
+
+.announcement-form input[placeholder="0001234"] {
+    width: 165px;
+}
+
+.announcement-form input[placeholder="1"],
+.announcement-form input[placeholder="SP"] {
+    width: 67px;
+    text-align: center;
+}
+
+.ra-info {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.ra-info a {
+    color: #397ef3;
+    text-decoration: underline;
+}
+
+.announcement-form-bottom-label {
+    font-size: 11px;
+    color: #727272;
 }
 
 /* Media queries for responsivity */
