@@ -59,25 +59,19 @@ h3 {
 }
 
 /* Navbar topo */
-.header-desktop {
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-mobile {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header-mobile .fa-bars,
-.header-mobile .fa-user {
+.fa-bars,
+.fa-user {
     font-size: 1.5rem;
     color: #51535F;
 }
 
-.header-mobile .fa-caret-down {
+.fa-caret-down {
     font-size: 1.5rem;
     color: #397EF3;
 }
@@ -906,13 +900,7 @@ footer h6 {
 
 /* Media queries for responsivity */
 @media (min-width: 1200px) {
-    .header-desktop {
-        display: flex;
-    }
-
-    .header-mobile {
-        display: none;
-    }
+    
 }
 
 @media (max-width: 1199px) {

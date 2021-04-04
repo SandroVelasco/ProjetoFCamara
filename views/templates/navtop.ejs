@@ -1,9 +1,9 @@
 <header>
   <div class="w-100">
-    <!-- Mobile -->
-    <div class="header-mobile">
-      <div class="bars-dropdown">
-        <i class="fas fa-bars" style="font-size: 1.5rem;"></i>
+    <!-- Desktop -->
+    <div class="header">
+      <div class="bars-dropdown d-lg-none">
+        <i class="fas fa-bars"></i>
 
         <div class="navbar-dropdown-list">
           <a href="#">Início</a>
@@ -13,21 +13,10 @@
       </div>
 
       <a href="/">
-        <img src="/img/Logo.svg" alt="logo" width="130">
-      </a>
-      <div>
-        <i class="far fa-user"></i>
-        <i class="fas fa-caret-down" alt="dropdown_icon" class="navbar-user-dropdown"></i>
-      </div>
-    </div>
-
-    <!-- Desktop -->
-    <div class="header-desktop">
-      <a href="/">
         <img src="/img/Logo.svg" alt="logo">
       </a>
 
-      <nav class="navbar-list">
+      <nav class="navbar-list d-none d-lg-block">
         <ul>
           <li>
             <a href="#">Início</a>
@@ -42,13 +31,16 @@
       </nav>
 
       <div class="navbar-user">
-        <a href="/pesquisar" class="navbar-donate-link">
+
+        <a href="/pesquisar" class="navbar-donate-link d-none d-lg-block">
           FAZER UMA DOAÇÃO
         </a>
 
-        <div class="navbar-user-content">
-          <h5>Olá, Maria Silva</h5>
-          <span>Minha conta</span>
+        <div class="navbar-user-content d-flex">
+          <div class="d-none d-lg-block">
+            <h5>Olá, Maria Silva</h5>
+            <span>Minha conta</span>
+          </div>
 
           <div class="navbar-dropdown-list">
             <span class="navbar-dropdown-list-title">Usuário</span>
@@ -83,10 +75,18 @@
               Ajuda
             </a>
           </div>
+
+          <div class="navbar-user-dropdown d-none d-lg-block">
+            <i class="fas fa-caret-down" alt="dropdown_icon"></i>
+          </div>
+
+          <div class="navbar-user-dropdown-mobile d-lg-none">
+            <i class="far fa-user"></i>
+            <i class="fas fa-caret-down" alt="dropdown_icon" class="navbar-user-dropdown"></i>
+          </div>
         </div>
-        <div class="navbar-user-dropdown">
-          <i class="fas fa-caret-down" alt="dropdown_icon"></i>
-        </div>
+
+
       </div>
     </div>
   </div>
@@ -119,6 +119,7 @@
 
   arrowDown.addEventListener('click', toggleDropdown);
   barsDropdown.addEventListener('click', toggleDropdown);
+  
 
   // Fechar dropdown se usuário clicar fora do elemento
   document.addEventListener('mouseup', function(e) {
