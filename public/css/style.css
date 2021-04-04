@@ -941,11 +941,15 @@ footer h6 {
 }
 
 .announcement-flex .side-progress-bar {
-    flex: 1 0 131px;
+    flex: 1 1 131px;
 }
 
 .announcement-content {
-    flex: 1 0 720px;
+    flex: 1 1 720px;
+}
+
+.announcement-content .row {
+    margin-bottom: 3rem;
 }
 
 .announcement-form {
@@ -1213,6 +1217,14 @@ footer h6 {
     }
 }
 
+@media (min-width: 769px) {
+    .announcement-flex {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
 @media (max-width: 768px) {
     .container {
         justify-content: space-between;
@@ -1281,6 +1293,30 @@ footer h6 {
 
     .card-payment-content {
         width: 100%;
+    }
+
+    .announcement-content .row {
+        margin-bottom: 5px;
+    }
+
+    .announcement-flex {
+        position: static;
+    }
+
+    .container {
+        min-height: max-content !important;
+        margin-bottom: 30px;
+    }
+
+    .ra-info {
+        font-size: 12px;
+        margin: 0;
+        display: flex;
+        grid-gap: 10px;
+    }
+
+    .btn-continue {
+        font-size: 16px;
     }
 }
 
@@ -1399,5 +1435,13 @@ footer h6 {
 
     .card-payment-paragraph {
         font-size: 10px;
+    }
+
+    .announcement-content .row .col-sm-6{
+        margin-bottom: 5px;
+    }
+
+    .announcement-form input[placeholder="0001234"] {
+        width: 107px;
     }
 }
