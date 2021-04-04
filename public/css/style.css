@@ -384,23 +384,103 @@ h3 {
     margin-right: 10%;
 }
 
+.howItWorks h4 {
+    display: inline;
+    text-align: center;
+}
+
 #help {
     color: #397EF3;
     border: none;
+    margin-right: 10%;
+    text-align: center;
 }
 
 #helped {
     color: #FF9292;
     border: none;
+    text-align: center;
+}
+
+.history h3 {
+    text-align: center;
+    margin-bottom: 80px;
 }
 
 .history {
+    margin-bottom: 80px;
+}
+
+.peopleHistory {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimony {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 30px;
+    margin-left: 5%;
+    width: 70%;
+}
+
+.selected {
+    display: flex;
+}
+
+.notSelected {
+    display: none;
+}
+
+#karinaDiv {
+    color: #4F4F4F;
+    transition: 1s;
+}
+
+#ritaDiv {
+    color: #4F4F4F;
+    transition: 1s;
+}
+
+#pedroDiv {
+    color: #4F4F4F;
+    transition: 1s;
+}
+
+.photos {
+    border-radius: 100%;
+    margin-left: 5%;
+}
+
+.arrowButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+}
+
+#leftButton {
+    cursor: pointer;
+}
+
+#rightButton {
+    cursor: pointer;
+}
+
+#buttons {
+    margin-top: 80px;
     text-align: center;
+    font-weight: bold;
 }
 
 #needDonationButton {
     margin-left: 30px;
 }
+
 
 /* Product box */
 .product-box {

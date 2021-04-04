@@ -27,4 +27,29 @@ function OldText () {
 OldText();
 
 window.addEventListener('resize', NewText);
-window.addEventListener('resize', NewText);
+window.addEventListener('resize', OldText);
+
+let leftArrow = document.querySelector('#leftButton');
+let rightArrow = document.querySelector('#rightButton');
+let histories = document.querySelectorAll('.divHistories');
+let index = 0;
+
+leftArrow.addEventListener('click', () => {
+  histories[index].ClassList.add('notSelected');
+  histories[index].ClassList.remove('selected');
+  index -= 1;
+  if (index < 0){
+    index = 2;
+  } 
+  histories[index].ClassList.add('selected');
+});
+
+rightArrow.addEventListener('click', () => {
+  histories[index].ClassList.add('notSelected');
+  histories[index].ClassList.remove('selected');
+  index += 1;
+  if (index >= histories.length){
+    index = 0;
+  }
+  histories[index].ClassList.add('selected');
+});
