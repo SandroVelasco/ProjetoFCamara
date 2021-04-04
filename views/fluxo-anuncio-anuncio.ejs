@@ -3,7 +3,34 @@
 <div class="container" style="min-height: 100%;">
   <%- include('./templates/navtop.ejs') %>
 
-  
+  <div class="announcement-flex">
+    <!-- Left Side Progress Bar -->
+    <div class="side-progress-bar">
+      <img src="/img/tracking-2.svg" alt="tracking">
+    </div>
+
+    <div class="announcement-content">
+      <h5 class="mb-5">Agora vamos fazer seu anúncio?</h5>
+
+      <form action="" class="mt-5">
+        <p class="announcement-title">Título do anúncio</p>
+        <p class="announcement-subtitle">Este é o título principal que as pessoas verão do seu anúncio. Exemplo: Livros de matemática</p>
+          
+        <input type="text" class="form-control" disabled></select>
+
+        <p class="announcement-title mt-5">Descrição do anúncio</p>
+        <p class="announcement-subtitle">Se quiser, fique à vontade para falar brevemente sobre você ou contar sua história. </p>
+
+        <textarea class="form-control" rows="4" disabled></textarea>
+
+        <div class="card-d-links">
+          <a href="/pesquisar" class="btn btn-back">< Voltar</a>
+          <a href="/doar/confirmacao" class="btn btn-continue">SALVAR DADOS</a>
+        </div>
+
+      </form>
+    </div>
+  </div>
 </div>
 
 <%- include('./templates/body.ejs') %>
