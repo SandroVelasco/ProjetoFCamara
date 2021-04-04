@@ -33,6 +33,14 @@ class AppController {
         res.redirect("/doar/descricao");
     }
   }
+
+  /**
+   * Rota: /anunciar
+   * Método: GET
+   */
+  anunciar(req, res) {
+    res.render('./../views/fluxo-anuncio-inicial');
+  }
 }
 
 module.exports = new AppController();
