@@ -2,7 +2,15 @@
   <div class="w-100">
     <!-- Mobile -->
     <div class="header-mobile">
-      <i class="fas fa-bars" style="font-size: 1.5rem;"></i>
+      <div class="bars-dropdown">
+        <i class="fas fa-bars" style="font-size: 1.5rem;"></i>
+
+        <div class="navbar-dropdown-list">
+          <a href="#">Início</a>
+          <a href="#">O que fazemos</a>
+          <a href="#">Como funciona</a>
+        </div>
+      </div>
 
       <a href="/">
         <img src="/img/Logo.svg" alt="logo" width="130">
@@ -86,22 +94,47 @@
 
 <script>
   // Header dropdown
-  const dropdown = document.querySelector('.navbar-dropdown-list');
-  const arrowDown = document.querySelector('.navbar-user-dropdown');
+  let dropdown = document.querySelector('.navbar-user-content .navbar-dropdown-list');
+  const arrowDown = document.querySelector('.navbar-user .navbar-user-dropdown');
+  const barsDropdown = document.querySelector('.header-mobile .bars-dropdown');
 
-  arrowDown.addEventListener('click', function() {
+  function toggleDropdown(e) {
+    const caretDown = document.querySelector('.navbar-user-dropdown .fa-caret-down');
+    const bars = document.querySelector('.fa-bars');
+
+    if(e.target == caretDown) {
+      dropdown = document.querySelector('.navbar-user-content .navbar-dropdown-list');
+    }
+
+    if(e.target == bars) {
+      dropdown = document.querySelector('.header-mobile .navbar-dropdown-list');
+    }
+
     if(dropdown.style.display == "block") {
       dropdown.style.display = "none";
     } else {
       dropdown.style.display = "block";
     }
-  });
+  }
+
+  arrowDown.addEventListener('click', toggleDropdown);
+  barsDropdown.addEventListener('click', toggleDropdown);
 
   // Fechar dropdown se usuário clicar fora do elemento
   document.addEventListener('mouseup', function(e) {
     if(dropdown.style.display == "block") {
 
-      if((e.target != dropdown && e.target.parentNode != dropdown) && e.target.parentNode != arrowDown) {
+      const validacoes = [
+        e.target != dropdown,                 // Se elemento clicado não for dropdown 
+        e.target.parentNode != dropdown,      // Se pai do elemento do elemento clicado não for dropdown
+        e.target.parentNode != arrowDown,     // Se pai do elemento clicado não for arrowDown
+        e.target.parentNode != barsDropdown   // Se pai do elemento clicado não for barsDropdown
+      ];
+
+      let checker = array => validacoes.every(Boolean);
+      
+      // Se todas as validações forem true
+      if(checker(validacoes)) {
         dropdown.style.display = "none";
       }
     }

@@ -82,6 +82,25 @@ h3 {
     color: #397EF3;
 }
 
+.bars-dropdown {
+    position: relative;
+}
+
+.bars-dropdown .navbar-dropdown-list {
+    display: block;
+    border-radius: 0;
+    width: 250px;
+    padding: 0;
+    display: none;
+}
+
+.bars-dropdown:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: max-content;
+}
+
 .navbar-list {
     flex-shrink: 0;
 }
@@ -163,7 +182,7 @@ h3 {
     color: #397EF3;
 }
 
-.navbar-user-dropdown i:hover {
+.navbar-user-dropdown i:hover, .bars-dropdown:hover {
     cursor: pointer;
 }
 
