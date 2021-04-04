@@ -95,19 +95,16 @@
 <script>
   // Header dropdown
   let dropdown = document.querySelector('.navbar-user-content .navbar-dropdown-list');
-  const arrowDown = document.querySelector('.navbar-user .navbar-user-dropdown');
-  const barsDropdown = document.querySelector('.header-mobile .bars-dropdown');
+  const userDropdown = document.querySelector('.navbar-user-content');
+  const barsDropdown = document.querySelector('.header .bars-dropdown');
 
   function toggleDropdown(e) {
-    const caretDown = document.querySelector('.navbar-user-dropdown .fa-caret-down');
-    const bars = document.querySelector('.fa-bars');
-
-    if(e.target == caretDown) {
+    if(this == userDropdown) {
       dropdown = document.querySelector('.navbar-user-content .navbar-dropdown-list');
     }
 
-    if(e.target == bars) {
-      dropdown = document.querySelector('.header-mobile .navbar-dropdown-list');
+    if(this == barsDropdown) {
+      dropdown = document.querySelector('.header .navbar-dropdown-list');
     }
 
     if(dropdown.style.display == "block") {
@@ -117,7 +114,7 @@
     }
   }
 
-  arrowDown.addEventListener('click', toggleDropdown);
+  userDropdown.addEventListener('click', toggleDropdown);
   barsDropdown.addEventListener('click', toggleDropdown);
   
 
@@ -128,12 +125,12 @@
       const validacoes = [
         e.target != dropdown,                 // Se elemento clicado não for dropdown 
         e.target.parentNode != dropdown,      // Se pai do elemento do elemento clicado não for dropdown
-        e.target.parentNode != arrowDown,     // Se pai do elemento clicado não for arrowDown
+        e.target.parentNode != userDropdown,  // Se pai do elemento clicado não for userDropdown
         e.target.parentNode != barsDropdown   // Se pai do elemento clicado não for barsDropdown
       ];
 
       let checker = array => validacoes.every(Boolean);
-      
+
       // Se todas as validações forem true
       if(checker(validacoes)) {
         dropdown.style.display = "none";

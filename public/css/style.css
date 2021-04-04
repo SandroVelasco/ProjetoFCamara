@@ -81,18 +81,11 @@ h3 {
 }
 
 .bars-dropdown .navbar-dropdown-list {
-    display: block;
     border-radius: 0;
     width: 250px;
     padding: 0;
     display: none;
-}
-
-.bars-dropdown:after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: max-content;
+    left: 0;
 }
 
 .navbar-list {
@@ -151,6 +144,10 @@ h3 {
     position: relative;
 }
 
+.navbar-user-content:hover {
+    cursor: pointer;
+}
+
 .navbar-user-content h5,
 .navbar-user-content span {
     line-height: 1.3;
@@ -188,6 +185,8 @@ h3 {
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px 0px 10px 10px;
     color: #212832;
+    top: 100%;
+    right: 0;
     display: none;
 }
 
