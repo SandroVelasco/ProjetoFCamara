@@ -1,97 +1,110 @@
 <%- include('./templates/head.ejs') %>
 
-<div class="container" style="min-height: 100%;">
+<div class="container">
   <%- include('./templates/navtop.ejs') %>
 
+  <div class="confirmacao-box">
+    <div class="confirmacao-box-content">
+      <h5>Materiais para serem doados</h5>
 
-<div id="confirmacao-content-box">
-  <div class="confirmacao-titulo">Materiais para serem doados</div>
+      <hr class="d-xl-none h5-separator">
 
-  <div class="confirmacao-info-box">
-    <h5 class="confirmacao-info-box-title">Entenda sua doação</h5>
-    <h5 class="confirmacao-info-box-subtitle1">Quem irá receber?</h5>
-    <p class="confirmacao-info-box-content1">Os estudantes são verificados e vinculados à uma instituição de ensino.</p>
-    <p class="confirmacao-info-box-content2">Enviamos os materias diretamente para a escola e eles receberão o material escolar em mãos.</p>
-    <p class="confirmacao-info-box-content3">Assim que os produtos forem enviados, você receberá o código de rastreio para acompanhar.</p>
-  </div>
-  
-  <div class="card-confirmacao-produtos1">
-    <div class="row">
-      <div class="imagem-produto">
-        <img src="/img/image 42.svg" class="card-confirmacao-img" alt="...">
+      <ul class="material-list">
+
+        <li>
+          <div class="img-box">
+            <img src="/img/image 42.png" alt="image">
+          </div>
+
+          <div class="material-description">
+            <h6>1 caderno universitário | 10 matérias </h6>
+            <p class="material-description-cashback">Na doação deste ítem, você recebe R$ 10,00 de cashback</p>
+
+            <img src="/img/image 44.svg" alt="" class="mt-3">
+          </div>
+
+          <div class="material-description-side">
+            <i class="far fa-times-circle"></i>
+            <p class="material-description-price">R$12,00</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="img-box">
+            <img src="/img/image 4.png" alt="image">
+          </div>
+
+          <div class="material-description">
+            <h6>1 caderno universitário | 10 matérias </h6>
+            <p class="material-description-cashback">Na doação deste ítem, você recebe R$ 25,00 de cashback</p>
+
+            <img src="/img/image 40.svg" alt="" class="mt-3">
+          </div>
+
+          <div class="material-description-side">
+            <i class="far fa-times-circle"></i>
+            <p class="material-description-price">R$30,00</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="img-box">
+            <img src="/img/image 43.png" alt="image">
+          </div>
+
+          <div class="material-description">
+            <h6>1 caderno universitário | 10 matérias </h6>
+            <p class="material-description-cashback">Na doação deste ítem, você recebe R$ 5,00 de cashback</p>
+
+            <img src="/img/image 40.svg" alt="" class="mt-3">
+          </div>
+
+          <div class="material-description-side">
+            <i class="far fa-times-circle"></i>
+            <p class="material-description-price">R$7,00</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="img-checkbox">
+            <input type="checkbox" class="form-check">
+          </div>
+
+          <p class="material-list-add-donation">Adicione R$1 a sua doação e nos ajude a manter a nossa plataforma.</p>
+        </li>
+
+        <li class="material-footer">
+          <div>
+            <p>Subtotal</p>
+            <p>R$ 50,00</p>
+          </div>
+        </li>
+
+      </ul>
+
+      <div class="donation-info d-lg-none mb-4">
+        <p>
+          Entenda sua doação. Quem irá receber?
+          <i class="far fa-question-circle"></i>
+        </p>
       </div>
-      <div class="col-md-8">
-        <div class="card-confirmacao-body">
-          <h5 class="card-confirmacao-title">1 caderno universitário | 10 matérias</h5>
-          <p class="card-confirmacao-text">Na doação deste ítem, você recebe R$ 10,00 de cashback</p>
-          <img src="/img/logo-americanas.svg" class="imagem-logo" alt="...">
-        </div>
+
+      <div class="material-links">
+        <a href="/pesquisar" class="btn btn-back">< Voltar</a>
+        <a href="/doar/pagamento" class="btn btn-continue">CONTINUAR</a>
       </div>
-      <div class="icone-lixo">
-        <img src="/icons/Vector-x.svg" class="imagem-lixo" alt="...">
-        <p class="card-confirmacao-preco">R$12,00</p>
-      </div>
+
+    </div>
+
+    <div class="confirmacao-box-info d-none d-xl-block">
+      <h5 class="cor-1">Entenda sua doação</h6>
+
+      <h6 class="my-5">Quem irá receber?</h6>
+      <p class="mb-5">Os estudantes são verificados e vinculados à uma instituição de ensino.</p>
+      <p class="mb-5">Enviamos os materias diretamente para a escola e eles receberão o material escolar em mãos.</p>
+      <p>Assim que os produtos forem enviados, você receberá o código de rastreio para acompanhar.</p>
     </div>
   </div>
-
-  <div class="card-confirmacao-produtos">
-    <div class="row">
-      <div class="imagem-produto">
-        <img src="/img/image 4.svg" class="card-confirmacao-img" alt="...">
-      </div>
-      <div class="col-md-8">
-        <div class="card-confirmacao-body">
-          <h5 class="card-confirmacao-title">1 Livro | Matemática Ensino Médio</h5>
-          <p class="card-confirmacao-text">Na doação deste ítem, você recebe R$ 25,00 de cashback</p>
-          <img src="/img/logo-cultura.svg" class="imagem-logo" alt="...">
-        </div>
-      </div>
-      <div class="icone-lixo">
-        <img src="/icons/Vector-x.svg" class="imagem-lixo" alt="...">
-        <p class="card-confirmacao-preco">R$30,00</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card-confirmacao-produtos">
-    <div class="row">
-      <div class="imagem-produto">
-        <img src="/img/image 5.svg" class="card-confirmacao-img" alt="...">
-      </div>
-      <div class="col-md-8">
-        <div class="card-confirmacao-body">
-          <h5 class="card-confirmacao-title">1 Kit Caneta esferográfica | 4 unidades</h5>
-          <p class="card-confirmacao-text">Na doação deste ítem, você recebe R$ 5,00 de cashback</p>
-          <img src="/img/logo-cultura.svg" class="imagem-logo" alt="...">
-        </div>
-      </div>
-      <div class="icone-lixo">
-        <img src="/icons/Vector-x.svg" class="imagem-lixo" alt="...">
-        <p class="card-confirmacao-preco">R$7,00</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="card-confirmacao-produtos-subtotal">
-    <div class="confirmacao-checkbox">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-        <label id="add-um-real" class="form-check-label" for="flexCheckDefault">Adicione <strong>R$1,00</strong> à sua doação e nos ajude a manter a nossa plataforma.</label>
-      </div>
-    </div>
-  </div>
-
-  <h5 class="card-confirmacao-subtotal">Subtotal</h5>
-  <h5 class="card-confirmacao-valor">R$49,00</h5>
-
-  <button class="botao-realizar-doacao">
-    <a href="/doar/pagamento">CONTINUAR</a>
-  </button>
-  <button class="botao-voltar-confirmacao">
-    <a href="/doar/descricao">< Voltar</a>
-  </button>
-
-</div>
 </div>
 
 <%- include('./templates/body.ejs') %>

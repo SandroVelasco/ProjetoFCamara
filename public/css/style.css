@@ -12,10 +12,25 @@ body {
     padding: 0;
 }
 
-h1 {
+h1, h5 {
     font-family: 'Nunito', sans-serif;
+}
+
+h1 {
     font-size: 40px;
     font-weight: 700;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+h6 {
+    font-weight: 400;
+    font-size: 20px;
+    color: #212832;
+    margin: 0;
 }
 
 ul {
@@ -31,6 +46,16 @@ h3 {
     font-size: 24px;
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
+}
+
+/* Genéricas */
+
+.font-weight-600 {
+    font-weight: 600;
+}
+
+.cor-1 {
+    color: #397EF3;
 }
 
 /* Navbar topo */
@@ -666,242 +691,110 @@ p.card-payment-info-description:last-child {
     margin-top: 16px;
 }
 
-/* info tela confirmacao */
+/* Tela confirmacao */
 
-#confirmacao-content-box{
+.confirmacao-box {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 24px;
+    padding: 90px 30px;
+    box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
     border-radius: 32px;
-    margin-bottom: 184px;
-    box-shadow: 2px 2px 8px rgba(85, 1, 175, 0.24);
-    margin-top: 46px;
-    border: 1px solid #EEF3F7;
-    width: 1135px;
-    height: 888px;
+    margin-top: 3rem;
+    margin-bottom: 50px;
 }
 
-.confirmacao-titulo{
-    margin-top: 104px;
-    margin-left: 115px;
-    font-size: 24px;
-    font: Nunito;
-    line-height: 36px;
+.confirmacao-box-info {
+    box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
+    border-radius: 32px;
+    background: rgba(255, 146, 146, .1);
+    padding: 45px 70px;
 }
 
-.card-confirmacao-produtos1{
+.material-list {
+    display: flex;
+    margin-top: 1.5rem;
+    flex-direction: column;
+}
+
+.material-list li {
+    padding: 17px 0;
     border-bottom: 1px solid #E2E6EF;
-    float: left;
-    margin-left: 115px;
-    margin-top: 37px;
-    width: 600px;
-    height: 122px;
+    display: flex;
+    align-items: center;
 }
 
-.card-confirmacao-produtos{
-    border-bottom: 1px solid #E2E6EF;
-    float: left;
-    margin-left: 115px;
-    width: 600px;
-    height: 122px;
+.img-box, .img-checkbox {
+    min-width: 88px;
+    text-align: center;
 }
 
-.card-confirmacao-img{
-    margin-left: 0;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 82px;
-    height: 82px;
-}
-
-.card-confirmacao-title{
-    width: 397px;
-    height: 18px;
-    margin-bottom: 20px;
-    font: Inter;
-    font-size: 20px;
-    line-height: 24px;
-}
-
-.card-confirmacao-text{
-    width: 247px;
-    height: 42px;
-    font: Inter;
-    color:#1352AF;
-    font-size: 14px;
-    line-height: 130%;
-}
-
-.card-confirmacao-body{
-    height: 100px;
-    width: 300px;
-    margin-top: 10px;
-    float: left;
-}
-
-.imagem-produto{
-    width: 110px;
-}
-
-.icone-lixo{
-    margin-left: 40px;
-    float: right;
-    width: 11px;
-}
-
-.card-confirmacao-preco{
-    width: 64px;
-    height: 24px;
-    margin-top: 80px;
-    float: right;
-    font: Inter;
-    color: #212832;
-}
-
-.imagem-lixo{
-    margin-right: 10px;
-    float: right;
-    margin-top: 10px;
-    width: 18px;
-    height: 20px;
-}
-
-.card-confirmacao-subtotal{
-    margin-top: 17px;
-    float: left;
-    color: #212832;
-    font: Inter;
-    font-size: 16px;
-    width: 101px;
-    height: 24px;
-    margin-left: 200px;
-}
-
-.card-confirmacao-produtos-subtotal{
-    border-bottom:  1px solid #E2E6EF;
-    float: left;
-    margin-left: 115px;
-    width: 600px;
+.img-box {
     height: 88px;
 }
 
-.card-confirmacao-valor{
-    margin-right: 43px;
-    margin-top: 19px;
-    float: right;
-    color: #212832;
-    font: Inter;
-    font-size: 16px;
-    width: 68px;
-    height: 21px;
+.img-checkbox {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
 }
 
-.confirmacao-info-box{
-    background-color: #fff5f5;
-    margin-right: 35px;
-    border-radius: 32px;
-    box-shadow: 2px 2px 8px rgba(85, 116, 175, 0.24);
-    float: right;
-    width: 375px;
-    height: 528px;
+.img-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
 }
 
-.confirmacao-info-box-title{
-    margin-top: 35px;
-    margin-left: 63px;
-    color: #397EF3;
-    font-family: Nunito;
-    font-style: normal;
-    font-size: 24px;
-    width: 224px;
-    height: 43px;
+.material-description {
+    margin-left: 10px;
 }
 
-.confirmacao-info-box-subtitle1{
-    margin-left: 63px;
-    margin-top: 19px;
-    color: #000000;
+.material-description-cashback {
+    font-size: 14px;
+    color: #1352AF;
+}
+
+.material-description-side {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    text-align: end;
+}
+
+.material-description-side .fa-times-circle {
     font-size: 20px;
-    width: 178.26px;
-    height: 24px;
+    color: #A9A9A9;
 }
 
-
-.confirmacao-info-box-content1{
-    font-style: normal;
-    font-weight: 300;
-    color: #51535F;
-    font-family: Inter;
-    margin-left: 63px;
-    margin-top: 32px;
-    font-size: 16px;
-    width: 236px;
-    height: 77px;
+.material-description-side .material-description-price {
+    margin-top: 41px;
 }
 
-.confirmacao-info-box-content2{
-    font-style: normal;
-    font-weight: 300;
-    color: #51535F;
-    font-family: Inter;
-    margin-left: 63px;
-    margin-top: 24px;
-    font-size: 16px;
-    width: 258px;
-    height: 76px;
-}
-
-.confirmacao-info-box-content3{
-    font-style: normal;
-    font-weight: 300;
-    color: #51535F;
-    font-family: Inter;
-    margin-left: 63px;
-    margin-top: 24px;
-    font-size: 16px;
-    width: 263px;
-    height: 71px;
-}
-
-.confirmacao-checkbox{
-    font-size: 16px;
-    margin-top: 21px;
-    margin-left: 65px;
-    float: left;
-    width: 407px;
-    height: 45px;
-}
-
-.botao-realizar-doacao{
-    box-sizing: border-box;
-    color: white;
-    font-size: 16px;
-    background-color: #397EF3;
-    border-radius: 5px;
-    border: 1px solid #397EF3;
-    margin-left: 50px;
-    margin-top: 110px;
-    width: 175.06px;
-    height: 48px;
-}
-
-.botao-realizar-doacao a {
-    color: white;
-}
-
-.botao-voltar-confirmacao{
-    float: left;
-    margin-top: -40px;
-    margin-left: 160px;
-    border: transparent;
-    background-color: transparent;
-    font-size: 20px;
-    width: 85px;
-    height: 24px;
-}
-
-#add-um-real{
+.material-list-add-donation {
     color: #0B4FAB;
 }
 
-/* página agradecimentos*/
+li.material-footer {
+    border-bottom: 0;
+    padding-left: 88px;
+}
+
+.material-footer div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 600;
+}
+
+.material-links {
+    margin-left: 88px;
+}
+
+.material-links .btn-back {
+    padding: 10px 0;
+}
+
+/* Página agradecimentos*/
 
 #mainImage {
     max-width: 30%;
@@ -985,6 +878,24 @@ footer h6 {
     }
 }
 
+@media (max-width: 1199px) {
+    .confirmacao-box {
+        grid-template-columns: 1fr;
+        grid-column-gap: 0;
+        box-shadow: none;
+        margin-top: 30px;
+        padding: 0 30px;
+    }
+
+    .confirmacao-box h5 {
+        text-align: center;
+    }
+
+    .material-list {
+        margin: 0;
+    }
+}
+
 @media (min-width: 993px) and (max-width: 1199px) {
     .banner h1 {
         font-size: 35px;
@@ -999,6 +910,7 @@ footer h6 {
     .dropdown-items button:first-child {
         margin-left: 0;
     }
+
 }
 
 @media(max-width: 992px) {
@@ -1084,6 +996,32 @@ footer h6 {
     .product-price {
         color: #397EF3;
     }
+
+    .donation-info p {
+        font-size: 12px;
+        color: #1152A9;
+    }
+
+    .donation-info i {
+        color: black;
+    }
+
+    li.material-footer {
+        padding-left: 0;
+    }
+
+    .material-links {
+        margin: 0;
+    }
+
+    .material-links .btn-back {
+        display: none;
+    }
+
+    .material-links .btn-continue {
+        display: block;
+        margin: 0;
+    }
 }
 
 @media(min-width: 769px) and (max-width: 992px) {
@@ -1111,6 +1049,45 @@ footer h6 {
 
     .banner h1 {
         font-size: 27px;
+    }
+
+    .confirmacao-box {
+        padding: 0;
+    }
+
+    .confirmacao-box h5 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .material-description h6 {
+        font-size: 14px;
+    }
+
+    .material-description-cashback {
+        color: #51535F;
+        font-size: 10px;
+    }
+
+    .material-description-side {
+        display: none;
+    }
+
+    .material-list-add-donation {
+        font-size: 14px;
+        color: #397EF3;
+        font-weight: 500;
+    }
+
+    li.material-footer {
+        padding-left: 20px;
+        padding-right: 15px;
+        border-bottom: 1px solid #E2E6EF;
+        margin-bottom: 26px;
+    }
+
+    .donation-info {
+        margin-left: 20px;
     }
 }
 
