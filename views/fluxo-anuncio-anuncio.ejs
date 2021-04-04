@@ -1,11 +1,11 @@
 <%- include('./templates/head.ejs') %>
 
-<div class="container" style="min-height: 100%;">
+<div class="container" style="min-height: 100%; position: relative;">
   <%- include('./templates/navtop.ejs') %>
 
   <div class="announcement-flex">
     <!-- Left Side Progress Bar -->
-    <div class="side-progress-bar">
+    <div class="side-progress-bar d-none d-lg-block">
       <img src="/img/tracking-2.svg" alt="tracking">
     </div>
 
@@ -26,7 +26,7 @@
       </form>
 
       <div class="card-d-links">
-        <a href="/anunciar/matricula" class="btn btn-back">< Voltar</a>
+        <a href="/anunciar/matricula" class="btn btn-back d-none d-lg-block">< Voltar</a>
         <a href="/anunciar/materiais" class="btn btn-continue">AVANÇAR</a>
       </div>
     </div>
