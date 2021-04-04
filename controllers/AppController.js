@@ -39,7 +39,24 @@ class AppController {
    * Método: GET
    */
   anunciar(req, res) {
-    res.render('./../views/fluxo-anuncio-inicial');
+    res.render("./../views/fluxo-anuncio-inicial");
+  }
+
+  /**
+   * Rota: /anunciar/:page
+   * Método: GET
+   */
+  anunciarForm(req, res) {
+    switch (req.params.page) {
+      case "matricula":
+      case "anuncio":
+      case "materiais":
+      case "finalizacao":
+        res.render(`./../views/fluxo-anuncio-${req.params.page}`);
+        break;
+      default:
+        res.redirect("/anunciar");
+    }
   }
 }
 

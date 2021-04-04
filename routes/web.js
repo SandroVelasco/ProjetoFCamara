@@ -10,6 +10,7 @@ const Middleware = require('./../controllers/Middleware');
 router.get('/', Middleware.sessionCheck, appController.index);
 router.get('/pesquisar', Middleware.sessionCheck, appController.pesquisar);
 router.get('/doar/:page', Middleware.sessionCheck, appController.doar);
-router.get("/anunciar", Middleware.sessionCheck, appController.anunciar);
+router.get('/anunciar', Middleware.sessionCheck, appController.anunciar);
+router.get('/anunciar/:page', Middleware.sessionCheck, appController.anunciarForm);
 
 module.exports = router;
