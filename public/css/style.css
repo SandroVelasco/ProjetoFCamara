@@ -1214,7 +1214,10 @@ footer h6 {
         order: -2;
     }
 
-
+    .announcement {
+        position: static;
+        transform: none;
+    }
 }
 
 @media(min-width: 769px) and (max-width: 992px) {
