@@ -1011,6 +1011,10 @@ footer h6 {
     color: #212832;
 }
 
+#form-mobile input {
+    margin: 10px 0;
+}
+
 /* Buttons */
 
 .btn-outline {
@@ -1033,10 +1037,6 @@ footer h6 {
 }
 
 /* Media queries for responsivity */
-@media (min-width: 1200px) {
-    
-}
-
 @media (max-width: 1199px) {
     html {
         font-size: 90%;
@@ -1213,6 +1213,8 @@ footer h6 {
     .card-payment-mobile-title {
         order: -2;
     }
+
+
 }
 
 @media(min-width: 769px) and (max-width: 992px) {

@@ -1,18 +1,21 @@
 <%- include('./templates/head.ejs') %>
 
-<div class="container mb-5" style="min-height: 100%;">
+<div class="container mb-5">
   <%- include('./templates/navtop.ejs') %>
 
-  <div class="announcement-flex">
+  <div class="announcement-flex" style="position: static; transform: none;">
     <!-- Left Side Progress Bar -->
-    <div class="side-progress-bar">
+    <div class="side-progress-bar d-none d-lg-block">
       <img src="/img/tracking-3.svg" alt="tracking">
     </div>
 
     <div class="announcement-content">
-      <h5 class="mb-5">Agora vamos fazer seu anúncio?</h5>
+      <h5 class="mb-5">Escolha quais materiais você precisa</h5>
 
-      <form action="" class="mt-5">
+      <h5 class="fw-normal">Lista de material escolar</h5>
+      <p class="announcement-subtitle">Escolha apenas o que você precisa. Lembre-se que existem mais estudantes precisando de material escolar</p>
+
+      <form action="" class="mt-5 d-none d-lg-block" id="form-desktop">
         <p class="announcement-title mb-2">Papelaria</p>
         
         <div class="announcement-checkbox">
@@ -131,8 +134,17 @@
         </div>
       </form>
 
+      <form action="" class="mt-5 d-lg-none" id="form-mobile">
+        <p class="announcement-subtitle">Categorias</p>
+        <div class="form-group">
+          <input type="text" placeholder="Papelaria" class="form-control" disabled>
+          <input type="text" placeholder="Livraria" class="form-control" disabled>
+          <input type="text" placeholder="Informática" class="form-control" disabled>
+        </div>
+      </form>
+
       <div class="card-d-links">
-        <a href="/anunciar/anuncio" class="btn btn-back">< Voltar</a>
+        <a href="/anunciar/anuncio" class="btn btn-back d-none d-lg-block">< Voltar</a>
         <a href="/anunciar/finalizacao" class="btn btn-continue">PUBLICAR</a>
       </div>
     </div>
