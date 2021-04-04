@@ -19,6 +19,7 @@ h1, h5 {
 h1 {
     font-size: 40px;
     font-weight: 700;
+    color: #45464E;
 }
 
 h5 {
@@ -896,6 +897,31 @@ footer h6 {
 
 .footer-logo-bottom {
     margin-top: 158px;
+}
+
+/* Anúncios */
+
+.announcement-container {
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.announcement {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.announcement h1 {margin-bottom: 47px;}
+.announcement p {margin-bottom: 40px;}
+
+.announcement .btn-continue {
+    padding: 11px 40px;
+    margin: 0;
+    border-radius: 10px;
 }
 
 /* Media queries for responsivity */
