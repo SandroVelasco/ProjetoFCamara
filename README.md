@@ -6,6 +6,7 @@ Tabela de conteúdos
 =================
 <!--ts-->
    * [Requerimentos](#requerimentos)
+   * [Clone do projeto](#clone-do-projeto)
    * [Instalação das dependências](#instalação-das-dependências)
    * [Como iniciar o site](#como-iniciar-o-site)
    * [URL Local](#url-local)
@@ -14,7 +15,14 @@ Tabela de conteúdos
 
 ## Requerimentos
 
+- Git
 - NodeJS
+
+## Clone do projeto
+
+```
+git clone https://github.com/SandroVelasco/ProjetoFCamara.git
+```
 
 ## Instalação das dependências
 
