@@ -1575,7 +1575,35 @@ footer h6 {
     }
 }
 
+.divHistories {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ritaDiv {
+    display: none;
+}
+
+#pedroDiv {
+    display: none;
+}
+
 @media (max-width: 576px) {
+    .divHistories {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #ritaDiv {
+        display: none;
+    }
+    
+    #pedroDiv {
+        display: none;
+    }
+  
     footer {
         padding: 30px 0;
     }
