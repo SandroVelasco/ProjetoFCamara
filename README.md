@@ -6,10 +6,10 @@ Tabela de conteúdos
 =================
 <!--ts-->
    * [Requerimentos](#requerimentos)
-   * [Instalação das dependências](#instalacao-das-dependencias)
+   * [Instalação das dependências](#instalação-das-dependências)
    * [Como iniciar o site](#como-iniciar-o-site)
    * [URL Local](#url-local)
-   * [Site hospedado](#site-hospeadado)
+   * [Site hospedado](#site-hospedado)
 <!--te-->
 
 ## Requerimentos
