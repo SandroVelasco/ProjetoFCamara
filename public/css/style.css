@@ -445,14 +445,23 @@ h3 {
 }
 
 .howItWorks {
-    margin-top: 80px;
+    padding: 40px 0;
+}
+
+.howItWorks-header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.howItWorks-header button#helped,
+.howItWorks-header button#help {
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .howItWorks h2 {
     font-weight: bold;
-    margin-left: 70px;
     display: inline;
-    margin-right: 10%;
 }
 
 .howItWorks h4 {
@@ -462,9 +471,8 @@ h3 {
 
 #help {
     color: #397EF3;
-    background-color: white;
+    background-color: #DCDCDC;
     border: none;
-    margin-right: 10%;
     text-align: center;
     border-radius: 10px 10px 0 0;
     border-top: #45464E;
@@ -475,6 +483,7 @@ h3 {
     border: none;
     text-align: center;
     border-radius: 10px 10px 0 0;
+    background-color: white;
 }
 
 #help1 {
@@ -1511,6 +1520,16 @@ footer h6 {
 
     .ourNumbers2 {
         width: auto;
+    }
+
+    .howItWorks-header {
+        grid-gap: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .howItWorks-header > * {
+        width: 100%;
     }
 }
 
