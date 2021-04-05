@@ -451,23 +451,29 @@ h3 {
 
 #help {
     color: #397EF3;
+    background-color: white;
     border: none;
     margin-right: 10%;
     text-align: center;
+    border-radius: 10px 10px 0 0;
+    border-top: #45464E;
 }
 
 #helped {
     color: #FF9292;
     border: none;
     text-align: center;
+    border-radius: 10px 10px 0 0;
 }
 
 #help1 {
     display: block;
+    width: 100%;
 }
 
 #help2 {
     display: none;
+    width: 100%;
 }
 
 .history h3 {

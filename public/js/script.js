@@ -37,12 +37,20 @@ let helped = document.querySelector('#helped');
 
 help.addEventListener('click', () => {
   help1.style.display = 'block';
+  help1.style.backgroundColor = '#FFFFFF';
+  help.style.backgroundColor = '#FFFFFF';
   help2.style.display = 'none';
+  help2.style.backgroundColor = '#FFFFFF';
+  helped.style.backgroundColor = '#DCDCDC';
 })
 
 helped.addEventListener('click', () => {
   help1.style.display = 'none';
+  help1.style.backgroundColor = '#FFFFFF';
+  help.style.backgroundColor = '#DCDCDC';
   help2.style.display = 'block';
+  help2.style.backgroundColor = '#FFFFFF';
+  helped.style.backgroundColor = '#FFFFFF';
 })
 
   let leftArrow = document.querySelector("#leftButton");
