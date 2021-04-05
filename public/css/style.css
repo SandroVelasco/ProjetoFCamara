@@ -398,6 +398,10 @@ h3 {
     padding-bottom: 80px;
 }
 
+.make h1, .make h6 {
+    color: white;
+}
+
 .make h3 {
     margin-bottom: 30px;
     text-align: center;
@@ -409,6 +413,7 @@ h3 {
     justify-content: center;
     width: 100%;
     margin-bottom: 5%;
+    grid-gap: 20px;
 }
 
 .ourNumbers2 {
@@ -416,12 +421,12 @@ h3 {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 18%;
+    min-width: 240px;
+    width: 240px;
     border: solid 2px;
     border-color: #FCCD54;
     border-radius: 10px;
     color: #EEF3F7;
-    margin-left: 3%;
 }
 
 .ourNumbers2:nth-of-type(1) {
@@ -1500,6 +1505,13 @@ footer h6 {
         font-size: 20px;
     }
 
+    .ourNunbers {
+        flex-direction: column;
+    }
+
+    .ourNumbers2 {
+        width: auto;
+    }
 }
 
 /* End of @media(max-width: 992px) */
