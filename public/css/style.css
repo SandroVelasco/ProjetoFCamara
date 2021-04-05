@@ -1052,6 +1052,37 @@ footer h6 {
     box-shadow: 6px -5px 6px -10px rgba(38, 39, 48, 0.18), 3px 4px 2px rgba(18, 19, 28, 0.18);
 }
 
+/* Tooltip */
+
+.donation-info .fa-question-circle {
+    position: relative;
+    cursor: pointer;
+}
+
+.s-tooltip {
+    --space-to-left: 10px;
+
+    font-size: 12px;
+    content: attr(data-tooltip);
+    position: absolute;
+    background: black;
+    color: white;
+    width: max-content;
+    max-width: 225px;
+    padding: 20px;
+    transform: translateY(calc(-100% - 30px)) scale(0);
+    right: calc(0px - var(--space-to-left));
+    font-family: "Inter", sans-serif;
+    border-radius: 2px;
+    background: #262626;
+    transition: .2s;
+    transform-origin: bottom center;
+}
+
+.s-tooltip p {
+    color: white !important; 
+}
+
 /* Media queries for responsivity */
 @media (max-width: 1199px) {
     html {

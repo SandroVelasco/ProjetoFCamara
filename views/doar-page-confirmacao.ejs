@@ -82,11 +82,19 @@
 
       </ul>
 
-      <div class="donation-info d-lg-none mb-4">
+      <div class="donation-info d-flex d-lg-none mb-4">
         <p>
           Entenda sua doação. Quem irá receber?
-          <i class="far fa-question-circle"></i>
         </p>
+        
+        <div class="position-relative ms-2">
+          <i class="far fa-question-circle" id="tooltip-question"></i>
+
+          <div class="s-tooltip">
+            <p class="mb-2">Enviamos os materias diretamente para a escola e eles receberão a doação em mãos.</p>
+            <p>Assim que os produtos forem enviados, você receberá o código de rastreio para acompanhar.</p>
+          </div>
+        </div>
       </div>
 
       <div class="material-links">
@@ -106,5 +114,21 @@
     </div>
   </div>
 </div>
+
+<script>
+  let toggle = true;
+  document.querySelector('#tooltip-question').addEventListener('click', function() {
+    const divTooltip = document.querySelector('.s-tooltip');
+
+    if(toggle) {
+      divTooltip.style.transform = "translateY(calc(-100% - 30px)) scale(1)";
+      toggle = false;
+    } else {
+      divTooltip.style.transform = "translateY(calc(-100% - 30px)) scale(0)";
+      toggle = true;
+    }
+    
+  });
+</script>
 
 <%- include('./templates/body.ejs') %>
