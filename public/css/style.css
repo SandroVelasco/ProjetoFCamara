@@ -309,20 +309,21 @@ h3 {
 
 /* Landing page */
 .main {
-    background-image: url(/img/imgLP.svg);
-    background-size:60%;
-    background-repeat: no-repeat;
-    background-position: right;
-    margin-left: 30px;
-    z-index: 0;
-    padding-top: 14%;
-    width: 100%;
-    height: 90vh;
+    display: flex;
+    padding: 70px 0;
     color: #51535F;
 }
 
-#donation {
-    line-height: 2;
+.main > * {
+    flex: 1 1 0;
+}
+
+.main-content {
+    align-self: center;
+}
+
+.main-image img {
+    width: 100%;
 }
 
 #boyImage {
@@ -1477,7 +1478,26 @@ footer h6 {
         position: static;
         transform: none;
     }
+
+    .main {
+        background: url("/img/imgLPmobile.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+        display: block;
+    }
+
+    .main-content {
+        flex: 0 1 auto;
+        width: 70%;
+    }
+
+    #donation {
+        font-size: 20px;
+    }
+
 }
+
+/* End of @media(max-width: 992px) */
 
 @media(min-width: 769px) and (max-width: 992px) {
     .banner h1 {
@@ -1584,6 +1604,14 @@ footer h6 {
     }
 
     .btn-continue {
+        font-size: 16px;
+    }
+
+    .main-content {
+        width: 55%;
+    }
+
+    #donation {
         font-size: 16px;
     }
 }
@@ -1741,5 +1769,9 @@ footer h6 {
 
     .announcement-form input[placeholder="0001234"] {
         width: 107px;
+    }
+
+    #donation {
+        font-size: 14px;
     }
 }
