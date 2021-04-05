@@ -1,6 +1,6 @@
 # Doei!
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis hendrerit efficitur. Nam eget ex dignissim, eleifend ipsum in, convallis velit. Suspendisse consectetur accumsan elit, quis commodo quam consequat sit amet. In condimentum orci quis metus volutpat dignissim. In ullamcorper ut lorem sed placerat. Aliquam quis finibus mauris.
+O Doei! é um site que conecta estudantes do ensino público que precisam de material escolar a doadores que apoiam causas educacionais com simplicidade e eficiência.
 
 Tabela de conteúdos
 =================
