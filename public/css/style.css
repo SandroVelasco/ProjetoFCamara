@@ -372,6 +372,11 @@ h3 {
     justify-content: space-evenly;
     width: 100%;
     margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+
+.triple > * {
+    flex: 0 1 285px;
 }
 
 .eachInitiative {
@@ -1613,6 +1618,10 @@ footer h6 {
 
     #donation {
         font-size: 16px;
+    }
+
+    .triple > * {
+        flex: 1 1 285px;
     }
 }
 
